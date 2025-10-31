@@ -5,6 +5,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+	<!--<base href="https://www.examtopics.com/exams/microsoft/az-204/view/1/">-->
+	<!-- meta tag -->
+
 	<title>Desenvolvimento Rápido de Aplicações em Python | ExamTopics</title>
 	<meta name="description" content="Free, Actual and Latest Practice Test for those who are preparing for Developing Solutions for Microsoft Azure
 		.">
@@ -113,7 +116,23 @@
 								<div onclick="hideSolution()" class="btn btn-primary hide-solution d-none d-print-none">
 									Hide Solution</div>
 								
-								<!-- Botões de navegação reposicionados -->
+								<!-- Container de estatísticas com botão de reset -->
+								<div id="stats-container" class="stats-container">
+									<div class="stats-content">
+										<div class="stats-display">
+											<span class="stat-correct">✓ 0</span>
+											<span class="stat-incorrect">✗ 0</span>
+											<span class="stat-unanswered">? 0</span>
+										</div>
+									</div>
+									<button id="resetStatsBtn" class="btn btn-warning btn-sm reset-stats-btn" 
+											onclick="resetStats()" title="Zerar todas as respostas e estatísticas" 
+											data-toggle="tooltip">
+										↻ Zerar Estatísticas
+									</button>
+								</div>
+								
+								<!-- Botões de navegação -->
 								<div class="navigation-buttons-container">
 									<button id="prevBtn" class="btn btn-secondary nav-btn">Anterior</button>
 									<button id="nextBtn" class="btn btn-success nav-btn">Próxima</button>

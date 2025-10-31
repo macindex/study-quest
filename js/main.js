@@ -5,6 +5,11 @@ let countQuestions = 0;
 let actualQuestion = { id: 0 };
 let answers = [];
 let shuffledQuestions = []; // Array para armazenar as questões com alternativas embaralhadas
+let stats = {
+    correct: 0,
+    incorrect: 0,
+    unanswered: 0
+};
 
 // Função para embaralhar array (Algoritmo Fisher-Yates)
 function shuffleArray(array) {
@@ -14,6 +19,152 @@ function shuffleArray(array) {
         [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
     }
     return newArray;
+}
+
+// ATUALIZAR a função updateStatsDisplay para não recriar o botão:
+function updateStatsDisplay() {
+    const statsContainer = document.getElementById('stats-container');
+    if (statsContainer) {
+        // Atualizar apenas as estatísticas, mantendo o botão existente
+        const statsDisplay = statsContainer.querySelector('.stats-display');
+        if (statsDisplay) {
+            statsDisplay.innerHTML = `
+                <span class="stat-correct">✓ ${stats.correct}</span>
+                <span class="stat-incorrect">✗ ${stats.incorrect}</span>
+                <span class="stat-unanswered">? ${stats.unanswered}</span>
+            `;
+        }
+    }
+}
+
+// NOVA FUNÇÃO: Atualizar estatísticas apenas para questões com solução revelada
+function updateStatsAfterReveal() {
+    stats = {
+        correct: 0,
+        incorrect: 0,
+        unanswered: 0
+    };
+
+    shuffledQuestions.forEach(question => {
+        const userAnswer = answers.find(ans => ans.id === question.id);
+        
+        if (!userAnswer) {
+            stats.unanswered++;
+            return;
+        }
+
+        const correctIndex = question.alternativas.findIndex(alt => alt.correta === true);
+        
+        if (userAnswer.selected === correctIndex) {
+            stats.correct++;
+        } else {
+            stats.incorrect++;
+        }
+    });
+
+    updateStatsDisplay();
+}
+
+// NOVA FUNÇÃO: Zerar todas as estatísticas e respostas
+function resetStats() {
+    // Zerar o array de respostas
+    answers = [];
+    
+    // Zerar as estatísticas
+    stats = {
+        correct: 0,
+        incorrect: 0,
+        unanswered: shuffledQuestions.length
+    };
+    
+    // Atualizar o display das estatísticas
+    updateStatsDisplay();
+    
+    // Limpar a seleção atual da questão
+    clearRadios();
+    
+    // Recarregar a questão atual para refletir o reset
+    getQuestion(countQuestions);
+    
+    // Mostrar mensagem de confirmação
+    showResetConfirmation();
+}
+
+// NOVA FUNÇÃO: Mostrar confirmação de reset
+function showResetConfirmation() {
+    // Criar um alerta temporário
+    const alertDiv = document.createElement('div');
+    alertDiv.className = 'alert alert-info alert-dismissible fade show';
+    alertDiv.innerHTML = `
+        Estatísticas zeradas com sucesso!
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+    `;
+    
+    // Inserir antes do container de estatísticas
+    const statsContainer = document.getElementById('stats-container');
+    if (statsContainer && statsContainer.parentNode) {
+        statsContainer.parentNode.insertBefore(alertDiv, statsContainer);
+    }
+    
+    // Remover o alerta após 3 segundos
+    setTimeout(() => {
+        if (alertDiv.parentNode) {
+            alertDiv.parentNode.removeChild(alertDiv);
+        }
+    }, 3000);
+}
+
+// NOVA FUNÇÃO: Resetar os botões de solução para o estado inicial
+function resetSolutionButtons() {
+    document.querySelector('.reveal-solution').classList.remove('d-none');
+    document.querySelector('.hide-solution').classList.add('d-none');
+    
+    // Remover cores das alternativas
+    const listItems = document.querySelectorAll('.multi-choice-item');
+    listItems.forEach(item => {
+        item.classList.remove('correct-choice', 'incorrect-choice');
+    });
+}
+
+// ATUALIZAR a função createStatsContainer para usar o HTML existente:
+function createStatsContainer() {
+    // Verificar se o container já existe no HTML
+    let statsContainer = document.getElementById('stats-container');
+    
+    if (!statsContainer) {
+        // Criar apenas se não existir (fallback)
+        statsContainer = document.createElement('div');
+        statsContainer.id = 'stats-container';
+        statsContainer.className = 'stats-container';
+        statsContainer.innerHTML = `
+            <div class="stats-content">
+                <div class="stats-display">
+                    <span class="stat-correct">✓ 0</span>
+                    <span class="stat-incorrect">✗ 0</span>
+                    <span class="stat-unanswered">? 0</span>
+                </div>
+            </div>
+            <button id="resetStatsBtn" class="btn btn-warning btn-sm reset-stats-btn" 
+                    onclick="resetStats()" title="Zerar todas as respostas e estatísticas" 
+                    data-toggle="tooltip">
+                ↻ Zerar Estatísticas
+            </button>
+        `;
+        
+        // Inserir antes dos botões de navegação
+        const navigationContainer = document.querySelector('.navigation-buttons-container');
+        if (navigationContainer && navigationContainer.parentNode) {
+            navigationContainer.parentNode.insertBefore(statsContainer, navigationContainer);
+        }
+    }
+    
+    updateStatsDisplay();
+    // Inicializar tooltips se jQuery estiver disponível
+    if (typeof $ !== 'undefined') {
+        $('#resetStatsBtn').tooltip();
+    }
 }
 
 // Função para processar e embaralhar as questões
@@ -58,6 +209,13 @@ async function loadQuestions() {
         
         // Atualizar título da página
         document.title = data.titulo + " | ExamTopics";
+        
+        // Inicializar estatísticas com todas as questões como não respondidas
+        stats.unanswered = shuffledQuestions.length;
+        
+        // Criar container de estatísticas
+        createStatsContainer();
+        
         // Inicializar a primeira questão
         getQuestion(0);
     } catch (error) {
@@ -107,6 +265,9 @@ function getQuestion(i) {
     listItems.forEach(item => {
         item.classList.remove('correct-choice', 'incorrect-choice');
     });
+    
+    // ATUALIZAÇÃO: Resetar os botões de solução ao carregar nova questão
+    resetSolutionButtons();
     
     // Atualizar estado dos botões de navegação
     updateNavigationButtons();
@@ -181,7 +342,8 @@ function initializeEventListeners() {
         if (countQuestions > 0) {
             countQuestions -= 1;
             getQuestion(countQuestions);
-            hideSolution();
+            // ATUALIZAÇÃO: Resetar botões de solução ao voltar para questão anterior
+            resetSolutionButtons();
         }
     });
 
@@ -189,27 +351,13 @@ function initializeEventListeners() {
         if (countQuestions < shuffledQuestions.length - 1) {
             countQuestions += 1;
             getQuestion(countQuestions);
+            // ATUALIZAÇÃO: Resetar botões de solução ao avançar para próxima questão
+            resetSolutionButtons();
         } else if (countQuestions === shuffledQuestions.length - 1) {
             countQuestions += 1;
             updateNavigationButtons();
         } else if (countQuestions >= shuffledQuestions.length) {
-            // Calcular resultado
-            const totalQuestions = shuffledQuestions.length;
-            let totalCorrectAnswers = 0;
-            
-            shuffledQuestions.forEach(q => {
-                q.alternativas.forEach((a, i) => {
-                    if (a.correta) {
-                        const questaoResolvida = answers.find(ans => ans.id === q.id);
-                        if (questaoResolvida?.selected === i) {
-                            totalCorrectAnswers += 1;
-                        }
-                    }
-                });
-            });
-
-            const percentage = Math.floor(totalCorrectAnswers / totalQuestions * 100);
-            document.querySelector('.modal-body').textContent = percentage + '%';
+            calculateFinalResults();
         }
     });
 }
@@ -226,7 +374,8 @@ function initializeWithJQuery() {
             if (countQuestions > 0) {
                 countQuestions -= 1;
                 getQuestion(countQuestions);
-                hideSolution();
+                // ATUALIZAÇÃO: Resetar botões de solução ao voltar para questão anterior
+                resetSolutionButtons();
             }
         });
 
@@ -234,27 +383,13 @@ function initializeWithJQuery() {
             if (countQuestions < shuffledQuestions.length - 1) {
                 countQuestions += 1;
                 getQuestion(countQuestions);
+                // ATUALIZAÇÃO: Resetar botões de solução ao avançar para próxima questão
+                resetSolutionButtons();
             } else if (countQuestions === shuffledQuestions.length - 1) {
                 countQuestions += 1;
                 updateNavigationButtons();
             } else if (countQuestions >= shuffledQuestions.length) {
-                // Calcular resultado
-                const totalQuestions = shuffledQuestions.length;
-                let totalCorrectAnswers = 0;
-                
-                shuffledQuestions.forEach(q => {
-                    q.alternativas.forEach((a, i) => {
-                        if (a.correta) {
-                            const questaoResolvida = answers.find(ans => ans.id === q.id);
-                            if (questaoResolvida?.selected === i) {
-                                totalCorrectAnswers += 1;
-                            }
-                        }
-                    });
-                });
-
-                const percentage = Math.floor(totalCorrectAnswers / totalQuestions * 100);
-                $('.modal-body').text(percentage + '%');
+                calculateFinalResults();
             }
         });
     } else {
@@ -262,6 +397,7 @@ function initializeWithJQuery() {
     }
 }
 
+// Modificar a função showSolution para também atualizar estatísticas
 function showSolution() {
     document.querySelector('.hide-solution').classList.remove('d-none');
     
@@ -288,6 +424,55 @@ function showSolution() {
     });
     
     document.querySelector('.reveal-solution').classList.add('d-none');
+    
+    // ATUALIZAÇÃO: Atualizar estatísticas apenas quando a solução for revelada
+    updateStatsAfterReveal();
+}
+
+// Modificar a função que calcula o resultado final
+function calculateFinalResults() {
+    const totalQuestions = shuffledQuestions.length;
+    let totalCorrectAnswers = 0;
+    
+    shuffledQuestions.forEach(q => {
+        q.alternativas.forEach((a, i) => {
+            if (a.correta) {
+                const questaoResolvida = answers.find(ans => ans.id === q.id);
+                if (questaoResolvida?.selected === i) {
+                    totalCorrectAnswers += 1;
+                }
+            }
+        });
+    });
+
+    const percentage = Math.floor(totalCorrectAnswers / totalQuestions * 100);
+    
+    // Atualizar o modal com estatísticas detalhadas
+    document.querySelector('.modal-body').innerHTML = `
+        <div class="final-results">
+            <div class="result-percentage">${percentage}%</div>
+            <div class="result-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Corretas:</span>
+                    <span class="stat-value correct">${stats.correct}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Incorretas:</span>
+                    <span class="stat-value incorrect">${stats.incorrect}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Não respondidas:</span>
+                    <span class="stat-value unanswered">${stats.unanswered}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Total:</span>
+                    <span class="stat-value total">${totalQuestions}</span>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    return percentage;
 }
 
 function hideSolution() {
