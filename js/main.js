@@ -4,6 +4,47 @@ let questions = [];
 let countQuestions = 0;
 let actualQuestion = { id: 0 };
 let answers = [];
+let shuffledQuestions = []; // Array para armazenar as questões com alternativas embaralhadas
+
+// Função para embaralhar array (Algoritmo Fisher-Yates)
+function shuffleArray(array) {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    }
+    return newArray;
+}
+
+// Função para processar e embaralhar as questões
+function processAndShuffleQuestions(originalQuestions) {
+    return originalQuestions.map(question => {
+        // Encontrar a alternativa correta original
+        const originalCorrectIndex = question.alternativas.findIndex(alt => alt.correta === true);
+        const originalCorrectAlternative = question.alternativas[originalCorrectIndex];
+        
+        // Embaralhar as alternativas
+        const shuffledAlternatives = shuffleArray(question.alternativas);
+        
+        // Encontrar a nova posição da alternativa correta
+        const newCorrectIndex = shuffledAlternatives.findIndex(alt => 
+            alt.letra === originalCorrectAlternative.letra && 
+            alt.texto === originalCorrectAlternative.texto
+        );
+        
+        // Atualizar a propriedade correta nas alternativas embaralhadas
+        shuffledAlternatives.forEach((alt, index) => {
+            alt.correta = (index === newCorrectIndex);
+        });
+        
+        return {
+            ...question,
+            alternativas: shuffledAlternatives,
+            originalCorrectIndex: originalCorrectIndex, // Guardar para referência se necessário
+            shuffledCorrectIndex: newCorrectIndex // Nova posição da correta
+        };
+    });
+}
 
 // Carregar questões do arquivo JSON
 async function loadQuestions() {
@@ -11,6 +52,10 @@ async function loadQuestions() {
         const response = await fetch('questions.json');
         const data = await response.json();
         questions = data.questions;
+        
+        // Embaralhar as alternativas de todas as questões
+        shuffledQuestions = processAndShuffleQuestions(questions);
+        
         // Atualizar título da página
         document.title = data.titulo + " | ExamTopics";
         // Inicializar a primeira questão
@@ -34,17 +79,17 @@ function getQuestion(i) {
         altElement.classList.remove('d-none');
     }
     
-    const totalAlternatives = questions[i].alternativas.length;
+    const totalAlternatives = shuffledQuestions[i].alternativas.length;
     clearRadios();
     
     const titleSpan = document.getElementById('numQuestion');
-    titleSpan.innerHTML = "Questão " + questions[i].id;
+    titleSpan.innerHTML = "Questão " + shuffledQuestions[i].id;
     
     const questionText = document.getElementById('questao');
-    questionText.innerHTML = questions[i].pergunta;
+    questionText.innerHTML = shuffledQuestions[i].pergunta;
     
-    // Preencher as alternativas
-    questions[i].alternativas.forEach((alternative, x) => {
+    // Preencher as alternativas (agora embaralhadas)
+    shuffledQuestions[i].alternativas.forEach((alternative, x) => {
         const altElement = document.getElementById(`alternative${x}`);
         altElement.textContent = alternative.letra + ". " + alternative.texto;
     });
@@ -55,10 +100,9 @@ function getQuestion(i) {
         altElement.classList.add('d-none');
     }
     
-    actualQuestion.id = questions[i].id;
+    actualQuestion.id = shuffledQuestions[i].id;
     
-    // REMOVIDO: Configurar a resposta correta oculta
-    // Apenas limpar as classes de cor
+    // Limpar as classes de cor
     const listItems = document.querySelectorAll('.multi-choice-item');
     listItems.forEach(item => {
         item.classList.remove('correct-choice', 'incorrect-choice');
@@ -68,7 +112,7 @@ function getQuestion(i) {
     updateNavigationButtons();
     
     // Restaurar resposta selecionada se existir
-    if (answers[i] && questions[i].id === answers[i].id) {
+    if (answers[i] && shuffledQuestions[i].id === answers[i].id) {
         const radio = document.getElementById(`q${answers[i].selected}`);
         if (radio) {
             radio.checked = true;
@@ -92,11 +136,11 @@ function updateNavigationButtons() {
     }
     
     // Botão Próxima
-    if (countQuestions === questions.length - 1) {
+    if (countQuestions === shuffledQuestions.length - 1) {
         nextBtn.textContent = 'Concluir';
         nextBtn.classList.remove("btn-success");
         nextBtn.classList.add("btn-danger");
-    } else if (countQuestions >= questions.length) {
+    } else if (countQuestions >= shuffledQuestions.length) {
         nextBtn.textContent = 'Ver Resultado';
         nextBtn.classList.remove("btn-success");
         nextBtn.classList.add("btn-danger");
@@ -142,18 +186,18 @@ function initializeEventListeners() {
     });
 
     document.getElementById('nextBtn').addEventListener('click', function() {
-        if (countQuestions < questions.length - 1) {
+        if (countQuestions < shuffledQuestions.length - 1) {
             countQuestions += 1;
             getQuestion(countQuestions);
-        } else if (countQuestions === questions.length - 1) {
+        } else if (countQuestions === shuffledQuestions.length - 1) {
             countQuestions += 1;
             updateNavigationButtons();
-        } else if (countQuestions >= questions.length) {
+        } else if (countQuestions >= shuffledQuestions.length) {
             // Calcular resultado
-            const totalQuestions = questions.length;
+            const totalQuestions = shuffledQuestions.length;
             let totalCorrectAnswers = 0;
             
-            questions.forEach(q => {
+            shuffledQuestions.forEach(q => {
                 q.alternativas.forEach((a, i) => {
                     if (a.correta) {
                         const questaoResolvida = answers.find(ans => ans.id === q.id);
@@ -187,18 +231,18 @@ function initializeWithJQuery() {
         });
 
         $('#nextBtn').click(function () {
-            if (countQuestions < questions.length - 1) {
+            if (countQuestions < shuffledQuestions.length - 1) {
                 countQuestions += 1;
                 getQuestion(countQuestions);
-            } else if (countQuestions === questions.length - 1) {
+            } else if (countQuestions === shuffledQuestions.length - 1) {
                 countQuestions += 1;
                 updateNavigationButtons();
-            } else if (countQuestions >= questions.length) {
+            } else if (countQuestions >= shuffledQuestions.length) {
                 // Calcular resultado
-                const totalQuestions = questions.length;
+                const totalQuestions = shuffledQuestions.length;
                 let totalCorrectAnswers = 0;
                 
-                questions.forEach(q => {
+                shuffledQuestions.forEach(q => {
                     q.alternativas.forEach((a, i) => {
                         if (a.correta) {
                             const questaoResolvida = answers.find(ans => ans.id === q.id);
@@ -221,8 +265,8 @@ function initializeWithJQuery() {
 function showSolution() {
     document.querySelector('.hide-solution').classList.remove('d-none');
     
-    // Encontrar a alternativa correta para a questão atual
-    const currentQuestion = questions[countQuestions];
+    // Encontrar a alternativa correta para a questão atual (nas alternativas embaralhadas)
+    const currentQuestion = shuffledQuestions[countQuestions];
     const correctIndex = currentQuestion.alternativas.findIndex(alt => alt.correta === true);
     
     // Encontrar a alternativa selecionada pelo usuário
