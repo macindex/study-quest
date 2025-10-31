@@ -1,0 +1,3438 @@
+{
+  "titulo": "Desenvolvimento Rápido de Aplicações em Python",
+  "questions": [
+        {
+      "id": 1,
+      "tipo": "mc",
+      "pergunta": "O desenvolvimento rápido de aplicações (RAD) é uma metodologia que enfatiza a rápida prototipagem e o feedback contínuo. Qual é o principal objetivo da RAD?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Substituir completamente métodos tradicionais sem feedback do usuário.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Priorizar planejamento detalhado e desenvolvimento de longo prazo.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Melhorar a eficiência no desenvolvimento, diminuindo o tempo e aumentando a satisfação dos clientes.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Eliminar a prototipagem e iterações, focando uma entrega única.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Usar grandes equipes para construir soluções complexas antes de qualquer feedback.",
+          "correta": false
+        }
+      ],
+      "explicacao": "O principal objetivo da RAD é melhorar a eficiência no desenvolvimento através de prototipagem iterativa e feedback constante do cliente."
+    },
+    {
+      "id": 2,
+      "tipo": "mc",
+      "pergunta": "A metodologia de desenvolvimento rápido de aplicações (RAD) prioriza a agilidade e flexibilidade no desenvolvimento de software, com ênfase na integração entre desenvolvedores e clientes. Qual das seguintes características está associada à metodologia RAD?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Planejamento detalhado e extensivo antes do início do desenvolvimento.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Iterações rápidas baseadas no feedback dos usuários.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Grandes equipes trabalhando de forma independente.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Desenvolvimento linear sem iterações ou revisões.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Ignorar o feedback dos usuários durante o processo de desenvolvimento.",
+          "correta": false
+        }
+      ],
+      "explicacao": "A prototipagem rápida e iterativa permite feedback constante e ajustes durante o desenvolvimento."
+    },
+    {
+      "id": 3,
+      "tipo": "mc",
+      "pergunta": "No cenário atual de desenvolvimento ágil de software, a metodologia RAD é notável por sua capacidade de acelerar a entrega de projetos. Qual dos seguintes princípios é um princípio da RAD?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rígida aderência a um planejamento em longo prazo.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Independência dos usuários no processo de desenvolvimento.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Desenvolvimento incremental e iterativo.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Grandes equipes centralizadas.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Ciclos de feedback longos e infrequentes.",
+          "correta": false
+        }
+      ],
+      "explicacao": "O desenvolvimento incremental e iterativo é um princípio fundamental da metodologia RAD."
+    },
+    {
+      "id": 4,
+      "tipo": "mc",
+      "pergunta": "No contexto da metodologia de desenvolvimento rápido de aplicações (RAD), é essencial compreender a sequência e o propósito de cada fase para garantir o sucesso do projeto. Qual das seguintes opções melhor descreve a fase de construção nessa metodologia?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "É a fase inicial, em que os requisitos do negócio e do sistema são definidos com a participação de todas as partes interessadas.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "São criados modelos e protótipos detalhados que representam processos, entradas e saídas do sistema.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A construção é o momento em que os protótipos são transformados em modelos operacionais do sistema, com contínua interação entre usuários e desenvolvedores para refinamentos.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Fase em que ocorrem a implementação do sistema em ambiente de produção e o treinamento dos usuários finais.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Consiste na análise e modelagem dos processos de negócios que irão orientar o desenvolvimento dos sistemas de informação.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Na fase de construção do RAD, os protótipos evoluem para sistemas operacionais através de refinamentos contínuos com os usuários."
+    },
+    {
+      "id": 5,
+      "tipo": "mc",
+      "pergunta": "Considerando a importância de testar protótipos em cenários que simulam condições reais de uso, como descrito no ciclo de desenvolvimento RAD, por que é essencial realizar esses testes antes da implementação final do software?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Garantir que o software possa ser usado em diferentes sistemas operacionais.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Retardar a execução de custos de desenvolvimento, deixando os problemas para depois.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Aumentar a velocidade de desenvolvimento do software.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Atender às regulamentações de segurança de software específicas da indústria.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Avaliar a performance e a usabilidade do produto em condições reais, evitando falhas críticas após a implementação.",
+          "correta": true
+        }
+      ],
+      "explicacao": "Testes em condições reais permitem identificar e corrigir problemas de performance e usabilidade antes da implementação final."
+    },
+    {
+      "id": 6,
+      "tipo": "mc",
+      "pergunta": "A utilização de ferramentas que auxiliem as equipes pode aumentar a qualidade e a velocidade do desenvolvimento de software, diminuindo a possibilidade de erros e a necessidade de mão de obra. Nesse contexto, qual é o papel principal das ferramentas CASE na implementação da metodologia RAD?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Monitorar o desempenho do sistema.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Facilitar a criação de diagramas e interfaces com o usuário.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Conduzir análises de risco detalhadas.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Gerenciar as comunicações entre equipes.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Automatizar testes de usabilidade.",
+          "correta": false
+        }
+      ],
+      "explicacao": "As ferramentas CASE (Computer-Aided Software Engineering) facilitam a criação de diagramas e interfaces, acelerando o desenvolvimento no RAD."
+    },
+    {
+      "id": 7,
+      "tipo": "mc",
+      "pergunta": "Considerando a necessidade de adaptabilidade e velocidade no mercado de tecnologia atual, qual das seguintes opções melhor descreve uma das principais vantagens da metodologia RAD conforme discutido no documento?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Permite um desenvolvimento sem necessidade de feedback do usuário.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Reduz a necessidade de equipes tecnicamente qualificadas.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Minimiza a interação e a comunicação entre as partes interessadas.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Oferece entregas rápidas através de iterações frequentes e protótipos funcionais.",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Elimina completamente o risco de erros no desenvolvimento.",
+          "correta": false
+        }
+      ],
+      "explicacao": "A principal vantagem do RAD são as entregas rápidas através de iterações frequentes com protótipos funcionais."
+    },
+    {
+      "id": 8,
+      "tipo": "mc",
+      "pergunta": "A metodologia de desenvolvimento rápido de aplicações (RAD) surgiu para suprir a necessidade de reduzir o tempo de entrega dos sistemas e a quantidade de erros. No entanto, para ser usada, ela deve satisfazer alguns critérios. Nesse sentido, selecione a opção correta sobre os critérios que devem ser satisfeitos para aplicar a metodologia RAD.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "É adequada para projetos de infraestrutura de larga escala.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A complexidade dos projetos não é um fator impeditivo.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A RAD não é adequada para projetos de grande escala.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Projetos de banco de dados distribuídos satisfazem aos critérios para aplicabilidade da metodologia RAD.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A RAD é ideal para sistemas que necessitam de especificações detalhadas e imutáveis desde o início do projeto.",
+          "correta": false
+        }
+      ],
+      "explicacao": "A RAD é mais adequada para projetos de pequena e média escala, não sendo recomendada para projetos muito grandes e complexos."
+    },
+    {
+      "id": 9,
+      "tipo": "mc",
+      "pergunta": "Considerando as características de entrega e feedback contínuos da metodologia RAD, qual é o impacto da escolha de uma linguagem de programação como Python para o processo de desenvolvimento?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Aumenta a complexidade do desenvolvimento devido à sua sintaxe complicada.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Reduz o tempo de desenvolvimento por ter uma sintaxe mais simples.",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Não afeta o desenvolvimento, pois todas as linguagens são equivalentes na RAD.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Diminui a qualidade dos protótipos gerados.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Exige maior número de desenvolvedores para a implementação devido à sua popularidade.",
+          "correta": false
+        }
+      ],
+      "explicacao": "Python reduz o tempo de desenvolvimento devido à sua sintaxe simples e legível, alinhando-se bem com a agilidade do RAD."
+    },
+    {
+      "id": 10,
+      "tipo": "mc",
+      "pergunta": "Para que a implementação da RAD seja bem-sucedida, é necessário selecionar criteriosamente as ferramentas empregadas no projeto; em especial, a linguagem de programação utilizada. Nesse contexto, qual das seguintes características do Python é destacada como particularmente vantajosa para a metodologia RAD?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Python é uma linguagem de programação exclusiva para sistemas operacionais Windows.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Python limita desenvolvimento a aplicações web exclusivamente.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A comunidade Python é pequena e pouco ativa, oferecendo suporte limitado.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Python possui uma sintaxe simples que acelera o desenvolvimento e facilita a iteração de protótipos.",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Python requer uso intensivo de ferramentas externas para gerenciamento de pacotes.",
+          "correta": false
+        }
+      ],
+      "explicacao": "A sintaxe simples do Python acelera o desenvolvimento e facilita as iterações rápidas de protótipos, característica essencial para o RAD."
+    },
+    {
+      "id": 11,
+      "tipo": "mc",
+      "pergunta": "Dado o papel fundamental dos frameworks no desenvolvimento ágil e interativo de software utilizando a metodologia RAD, qual das seguintes opções contém um framework de desenvolvimento web que pode auxiliar na implementação da RAD?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Django",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Numpy",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Pandas",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Kivy",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "PyQt",
+          "correta": false
+        }
+      ],
+      "explicacao": "Django é um framework web de alto nível em Python que segue o padrão MVC e é amplamente utilizado para desenvolvimento rápido de aplicações web."
+    },
+    {
+      "id": 12,
+      "tipo": "mc",
+      "pergunta": "A linguagem de programação Python oferece diversas ferramentas para a ______ e ______ de arquivos e diretórios. Para garantir o correto funcionamento do programa ao manipular arquivos e strings, é essencial adotar ______ e realizar o tratamento de exceções. Qual das opções abaixo melhor completa as lacunas acima?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "compilação, interpretação, padrões de codificação",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "leitura, gravação, boas práticas",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "análise, codificação, estilos de programação",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "execução, teste, diretrizes de codificação",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "configuração, instalação, normas de segurança",
+          "correta": false
+        }
+      ],
+      "explicacao": "Python oferece ferramentas para leitura e gravação de arquivos, sendo essencial adotar boas práticas e tratamento de exceções para garantir o funcionamento correto."
+    },
+    {
+      "id": 13,
+      "tipo": "mc",
+      "pergunta": "Assinale a alternativa correta que complementa a frase: 'Durante o tratamento de exceções, devemos optar por exceções ______ sempre que possível.'",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Abrangentes",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Comuns",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Específicas",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Incomuns",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Genéricas",
+          "correta": false
+        }
+      ],
+      "explicacao": "Devemos preferir exceções específicas para tratar diferentes tipos de erros de forma mais precisa e adequada."
+    },
+    {
+      "id": 14,
+      "tipo": "mc",
+      "pergunta": "Fernanda está aprendendo sobre manipulação de arquivos em Python e deseja entender as diferenças entre os modos de abertura de arquivo. Qual dos seguintes modos abrirá um arquivo para leitura e permitirá a adição de novos dados ao final, sem sobrescrever o conteúdo existente?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "\"r+\"",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "\"w+\"",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "\"a+\"",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "\"rw\"",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "\"wr+\"",
+          "correta": false
+        }
+      ],
+      "explicacao": "O modo \"a+\" abre o arquivo para leitura e escrita, posicionando o cursor no final do arquivo para adicionar novos dados sem sobrescrever o conteúdo existente."
+    },
+    {
+      "id": 15,
+      "tipo": "mc",
+      "pergunta": "Luciana está tentando ler o conteúdo de um arquivo chamado \"informacoes.txt\". Ela quer armazenar esse conteúdo em uma variável para posterior manipulação. Qual é a melhor forma de Luciana ler o conteúdo do arquivo e armazená-lo em uma variável?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "data = open(\"informacoes.txt\", \"w\").read()",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "data = open(\"informacoes.txt\", \"a\").read()",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "data = open(\"informacoes.txt\").fetch()",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "data = open(\"informacoes.txt\", \"r\").read()",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "data = open(\"informacoes.txt\").write()",
+          "correta": false
+        }
+      ],
+      "explicacao": "O modo \"r\" é para leitura e o método read() retorna todo o conteúdo do arquivo como uma string."
+    },
+    {
+      "id": 16,
+      "tipo": "mc",
+      "pergunta": "A manipulação de listas em Python permite a realização de diversas operações, desde a criação até a manipulação de seus elementos. Ao criar uma lista, como minha_lista, é possível processá-la de diferentes maneiras. Em uma situação, o método __________ é utilizado com o conector vírgula (',') para combinar seus elementos. O resultado desse processo é então __________ em uma variável, como texto1. Em uma abordagem alternativa, os elementos da mesma lista podem ser unidos usando outro conector, e o resultado é __________ em um arquivo distinto. Substitua cada __________ por uma das seguintes palavras:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "split, atribuído, lido",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "append, guardado, mostrado",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "join, armazenado, gravado",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "remove, retirado, editado",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "find, pesquisado, excluído",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método join() combina elementos de uma lista com um separador, o resultado é armazenado em uma variável e pode ser gravado em um arquivo."
+    },
+    {
+      "id": 17,
+      "tipo": "mc",
+      "pergunta": "Um desenvolvedor está trabalhando em um script Python para concatenar uma lista de palavras em uma única string, com cada palavra separada por vírgulas. Esta funcionalidade será usada para formatar dados antes de escrevê-los em um arquivo. Qual método de string deve ser usado para concatenar uma lista de palavras com vírgulas?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "append(',')",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "join(',')",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "concat(',')",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "merge(',')",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "combine(',')",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método join() de strings é usado para concatenar elementos de uma lista em uma única string, separados por um delimitador específico."
+    },
+    {
+      "id": 18,
+      "tipo": "mc",
+      "pergunta": "Beatriz, uma entusiasta da programação, está aprendendo sobre manipulação de strings em Python. Ela quer conhecer as funções disponíveis para essa finalidade. Das opções abaixo, qual está relacionada à manipulação de dados em Python?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Funções para manipulação de bancos de dados",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Funções para manipulação de gráficos",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Funções para manipulação de interfaces gráficas",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Funções de manipulação de strings",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Funções para manipulação de planilhas",
+          "correta": false
+        }
+      ],
+      "explicacao": "As funções de manipulação de strings são específicas para trabalhar com dados textuais em Python."
+    },
+    {
+      "id": 19,
+      "tipo": "mc",
+      "pergunta": "Pedro, um desenvolvedor Python, busca aprimorar suas habilidades em manipulação de dados em arquivos. Ele decide estudar as melhores práticas para lidar com arquivos e strings, bem como o tratamento de exceções. Considerando o texto, analise as afirmativas abaixo:\nI. Pedro deseja aprender sobre manipulação de dados utilizando a linguagem Java.\nII. Tratamento de exceções é crucial para garantir o funcionamento correto dos programas.\nIII. Pedro não demonstrou interesse em aprender boas práticas para manipular arquivos e strings.\nAssinale a alternativa correta:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Apenas a afirmativa I está correta",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Apenas a afirmativa II está correta",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Apenas as afirmativas I e III estão corretas",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Apenas as afirmativas II e III estão corretas",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Todas as afirmativas estão corretas",
+          "correta": false
+        }
+      ],
+      "explicacao": "Apenas a afirmativa II está correta, pois Pedro está estudando Python (não Java) e demonstrou interesse em boas práticas para manipular arquivos e strings."
+    },
+    {
+      "id": 20,
+      "tipo": "mc",
+      "pergunta": "Luciana está tentando ler o conteúdo de um arquivo chamado \"informacoes.txt\". Ela quer armazenar esse conteúdo em uma variável para posterior manipulação. Qual é a melhor forma de Luciana ler o conteúdo do arquivo e armazená-lo em uma variável?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "data = open(\"informacoes.txt\", \"w\").read()",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "data = open(\"informacoes.txt\", \"a\").read()",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "data = open(\"informacoes.txt\").fetch()",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "data = open(\"informacoes.txt\", \"r\").read()",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "data = open(\"informacoes.txt\").write()",
+          "correta": false
+        }
+      ],
+      "explicacao": "O modo \"r\" é para leitura e o método read() retorna todo o conteúdo do arquivo como uma string para armazenamento em variável."
+    },
+    {
+      "id": 21,
+      "tipo": "mc",
+      "pergunta": "No Python 3.7, a instrução que realiza a impressão de uma lista de cadeias de caracteres nomeada \"y\", separando cada elemento com uma vírgula, é:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "print(','.join(y))",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "print(join(y,','))",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "print(y.join())",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "print(y,',')",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "print(y %(','))",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método correto é usar ','.join(y) para unir os elementos da lista y com vírgulas e depois imprimir o resultado."
+    },
+    {
+      "id": 22,
+      "tipo": "mc",
+      "pergunta": "A metodologia de desenvolvimento RAD possui diversas fases. Cada uma com objetivos específicos de modo a desenvolver um sistema rápido e em conformidade com os requisitos de negócios. Dentre as cinco fases apresentadas por James Kerr. É correto afirmar que:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Os incrementos funcionais são feitos em cada uma das fases da metodologia RAD",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A documentação referente aos requisitos funcionais do sistema são a fonte principal para fazer a modelagem de negócios",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A partir da modelagem de negócios é iniciada a fase de modelagem de processos",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A fase de testes pode iniciar logo depois da fase de modelagem de processos",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A modelagem de negócio é obtida através das análises do fluxo e da obtenção de informações",
+          "correta": true
+        }
+      ],
+      "explicacao": "A modelagem de negócio no RAD é obtida através da análise dos fluxos de trabalho e coleta de informações dos processos empresariais."
+    },
+    {
+      "id": 23,
+      "tipo": "mc",
+      "pergunta": "Um dos princípios do RAD é 'a adequação para fins comerciais é o critério essencial para aceitação de resultados'. Nesse sentido, selecione a opção CORRETA:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Este princípio garante que o produto terá menos erros e, consequentemente, terá menos vulnerabilidades",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "O foco deve ser voltado para cumprir os prazos pré-estabelecidos",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O foco é fazer o desenvolvimento para atender aos requisitos funcionais",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Significa que as melhores práticas para desenvolver um software seguro devem ser aplicadas",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Permite que os desenvolvedores tomem a decisão sobre a aplicação das melhores soluções para o projeto",
+          "correta": false
+        }
+      ],
+      "explicacao": "Este princípio enfatiza que o sistema deve atender às necessidades comerciais e requisitos funcionais como critério principal de aceitação."
+    },
+    {
+      "id": 24,
+      "tipo": "mc",
+      "pergunta": "Uma startup decide adotar a metodologia RAD para o desenvolvimento de seu novo aplicativo móvel. A equipe é pequena e a comunicação interna é ágil, facilitando a implementação de mudanças rápidas conforme solicitado pelos stakeholders. Qual aspecto da equipe contribui significativamente para o sucesso da aplicação da metodologia RAD neste caso?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Grande número de desenvolvedores",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Comunicação ágil e eficiente",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Uso extensivo de documentação",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Longo prazo de desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Alta complexidade do projeto",
+          "correta": false
+        }
+      ],
+      "explicacao": "A comunicação ágil e eficiente é fundamental para o sucesso do RAD, permitindo feedback rápido e implementação de mudanças de forma iterativa."
+    },
+    {
+      "id": 25,
+      "tipo": "mc",
+      "pergunta": "A necessidade de imprimir eficiência no desenvolvimento de sistemas levou à criação da metodologia rápida de desenvolvimento de software, mais conhecida pela sigla em inglês: RAD (Rapid Application Development). Um dos princípios do RAD é a entrega contínua de produtos dentro do prazo. Nesse sentido, selecione a opção CORRETA:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Isso permite que a equipe do projeto defina rapidamente a abordagem ideal para entregar o produto no tempo disponível",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Isso permite reduzir custos, desde que, pelo menos, uma parte do sistema esteja funcionando corretamente",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Este princípio garante que o produto terá menos erros",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Prazo sempre deve ser respeitado, mesmo que não seja possível entregar o produto conforme programado",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Desenvolvimento rápido sempre vai reduzir os custos do projeto",
+          "correta": false
+        }
+      ],
+      "explicacao": "A entrega contínua no RAD permite que a equipe adapte rapidamente a abordagem para garantir a entrega dentro do prazo estabelecido."
+    },
+    {
+      "id": 26,
+      "tipo": "mc",
+      "pergunta": "As fases da metodologia RAD estão interrelacionadas entre si no sentido que apenas quando uma fase estiver concluída, a próxima pode iniciar. Em relação as fases da metodologia de desenvolvimento RAD, selecione a opção CORRETA:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A flexibilidade da metodologia RAD permite que o sequenciamento das fases de desenvolvimento seja ignorado, desde que em algum momento elas sejam executadas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A coleta de dados é feita na fase de modelagem de negócios e serão agrupados em estruturas de negócio na fase de prototipação",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O agrupamento dos dados em objetos de negócio é feito na fase de modelagem de dados",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "A fase de teste da metodologia RAD deve ser aplicada apenas para a funcionalidade que foi incluída no ciclo iterativo",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Em cada uma das fases da metodologia RAD, usuário pode incluir um novo requisito",
+          "correta": false
+        }
+      ],
+      "explicacao": "Na fase de modelagem de dados do RAD, os dados coletados são organizados e agrupados em objetos de negócio que representam as entidades do sistema."
+    },
+    {
+      "id": 27,
+      "tipo": "mc",
+      "pergunta": "A metodologia do RAD possui diversas vantagens e desvantagens em relação às metodologias de desenvolvimento tradicionais. Nesse sentido, selecione a opção correta sobre as características da metodologia RAD:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Diferente de métodos tradicionais de desenvolvimento, a RAD demanda por intensa colaboração entre desenvolvedores e usuários",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Apesar das diferenças dos métodos tradicionais, se assemelham no sentido de que os sistemas-alvo devem ser modularizados",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "No sentido de atingir a meta da rapidez do desenvolvimento, a metodologia RAD possui poucas reuniões",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Os requisitos funcionais são determinados no início do projeto e não podem ser alterados ao longo do projeto de modo a atingir a rapidez do desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Uma das vantagens mais importantes da metodologia RAD é sua adequação para projetos complexos de grande escala",
+          "correta": false
+        }
+      ],
+      "explicacao": "A colaboração intensa entre desenvolvedores e usuários é uma característica distintiva do RAD em comparação com metodologias tradicionais."
+    },
+    {
+      "id": 28,
+      "tipo": "mc",
+      "pergunta": "Para fazer a escolha de um framework e bibliotecas para desenvolver projetos RAD, é necessário observar diversos critérios. Nesse sentido, selecione a opção CORRETA que justifique a escolha de um determinado framework:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Deve considerar se o framework suporta a linguagem Python por ser enxuta e possuir mais pacotes do que as demais linguagens de programação",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A principal característica a ser considerada refere-se ao tipo de licença do framework",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Deve ser feita para frameworks que deem suporte ao desenvolvimento de aplicações WEB e geração de gráficos",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Deve levar em consideração a qualidade dos componentes visuais, de modo a manter a motivação das partes interessadas no projeto",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Deve estar alinhada com os princípios da RAD, ou seja, suportar o desenvolvimento rápido",
+          "correta": true
+        }
+      ],
+      "explicacao": "A escolha do framework deve priorizar o suporte ao desenvolvimento rápido, que é o princípio fundamental da metodologia RAD."
+    },
+    {
+      "id": 29,
+      "tipo": "mc",
+      "pergunta": "Uma empresa de TI opta pela metodologia RAD para um projeto de modernização de seu sistema interno. A equipe escolhida é composta por membros com habilidades diversificadas, capazes de trabalhar em diferentes aspectos do projeto de forma integrada. Qual característica da equipe é mais relevante para a eficácia da metodologia RAD neste projeto?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Especialização em uma única área",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Habilidades diversificadas",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Experiência em projetos de longa duração",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Preferência por processos formais",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Foco em desenvolvimento independente",
+          "correta": false
+        }
+      ],
+      "explicacao": "Habilidades diversificadas permitem que a equipe trabalhe de forma integrada em diferentes aspectos do projeto, essencial para a agilidade do RAD."
+    },
+    {
+      "id": 30,
+      "tipo": "mc",
+      "pergunta": "Um dos princípios do RAD é 'Todas as mudanças durante o desenvolvimento são reversíveis'. Nesse sentido, selecione a opção CORRETA:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A versão atual do protótipo pode não corresponder à expectativa do cliente, portanto é adequado retornar a versão anterior que já está aprovada pelo cliente",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "A não flexibilidade da metodologia RAD pode não facilitar o desenvolvimento de protótipos, portanto o desenvolvedor nem sempre pode criar uma versão",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Nas iterações com os usuários, os desenvolvedores podem detectar uma funcionalidade que não atende a um requisito não-funcional. Portanto é necessário voltar a versão anterior",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Dada a flexibilidade da metodologia RAD, a utilização de ferramentas de controle de versões de software é desnecessária, pois os protótipos sempre podem ser recuperados",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "As novas versões devem ter o incremento de apenas uma nova funcionalidade, pois, caso não seja validada pelo usuário, é mais simples retornar a versão anterior que já foi validada",
+          "correta": false
+        }
+      ],
+      "explicacao": "Este princípio permite reverter para versões anteriores quando o protótipo atual não atende às expectativas do cliente, mantendo versões funcionais aprovadas."
+    },
+    {
+      "id": 31,
+      "tipo": "mc",
+      "pergunta": "Em uma empresa de software, um novo projeto é iniciado usando a metodologia RAD. O objetivo é desenvolver rapidamente um aplicativo web customizado para um cliente, permitindo a modificação contínua do protótipo durante o desenvolvimento. Qual é um dos principais benefícios do uso da metodologia RAD neste cenário?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Menor custo de desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Independência de feedback do cliente",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Maior segurança no código",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Rápida adaptação a mudanças",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Menos necessidade de testes",
+          "correta": false
+        }
+      ],
+      "explicacao": "A rápida adaptação a mudanças é um dos principais benefícios do RAD, permitindo ajustes contínuos baseados no feedback do cliente."
+    },
+    {
+      "id": 32,
+      "tipo": "mc",
+      "pergunta": "Uma startup decide adotar a metodologia RAD para o desenvolvimento de seu novo aplicativo móvel. A equipe é pequena e a comunicação interna é ágil, facilitando a implementação de mudanças rápidas conforme solicitado pelos stakeholders. Qual aspecto da equipe contribui significativamente para o sucesso da aplicação da metodologia RAD neste caso?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Grande número de desenvolvedores",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Comunicação ágil e eficiente",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Uso extensivo de documentação",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Longo prazo de desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Alta complexidade do projeto",
+          "correta": false
+        }
+      ],
+      "explicacao": "A comunicação ágil e eficiente é fundamental para o sucesso do RAD, permitindo feedback rápido e implementação iterativa de mudanças."
+    },
+    {
+      "id": 33,
+      "tipo": "mc",
+      "pergunta": "Uma organização governamental adota a metodologia RAD para desenvolver um novo sistema de gestão. O projeto requer colaboração constante com várias partes interessadas, incluindo funcionários e cidadãos, para garantir que o sistema atenda a todas as necessidades identificadas. Qual elemento é crucial para o sucesso do projeto RAD em um ambiente governamental com múltiplos stakeholders?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Estrutura hierárquica rígida",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Colaboração constante com stakeholders",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Foco em tecnologias emergentes",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Evitar feedback frequente",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Priorizar o desenvolvimento autônomo",
+          "correta": false
+        }
+      ],
+      "explicacao": "A colaboração constante com múltiplos stakeholders é essencial no RAD para garantir que todas as necessidades sejam identificadas e atendidas durante o desenvolvimento iterativo."
+    },
+    {
+      "id": 34,
+      "tipo": "mc",
+      "pergunta": "Uma empresa de TI opta pela metodologia RAD para um projeto de modernização de seu sistema interno. A equipe escolhida é composta por membros com habilidades diversificadas, capazes de trabalhar em diferentes aspectos do projeto de forma integrada. Qual característica da equipe é mais relevante para a eficácia da metodologia RAD neste projeto?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Especialização em uma única área",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Habilidades diversificadas",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Experiência em projetos de longa duração",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Preferência por processos formais",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Foco em desenvolvimento independente",
+          "correta": false
+        }
+      ],
+      "explicacao": "Habilidades diversificadas permitem que a equipe trabalhe de forma integrada em diferentes aspectos do projeto, essencial para a agilidade do RAD."
+    },
+    {
+      "id": 35,
+      "tipo": "mc",
+      "pergunta": "As fases da metodologia RAD estão interrelacionadas entre si no sentido que apenas quando uma fase estiver concluída, a próxima pode iniciar. Em relação as fases da metodologia de desenvolvimento RAD, selecione a opção CORRETA:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A flexibilidade da metodologia RAD permite que o sequenciamento das fases de desenvolvimento seja ignorado, desde que em algum momento elas sejam executadas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A coleta de dados é feita na fase de modelagem de negócios e serão agrupados em estruturas de negócio na fase de prototipação",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O agrupamento dos dados em objetos de negócio é feito na fase de modelagem de dados",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "A fase de teste da metodologia RAD deve ser aplicada apenas para a funcionalidade que foi incluída no ciclo iterativo",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Em cada uma das fases da metodologia RAD, usuário pode incluir um novo requisito",
+          "correta": false
+        }
+      ],
+      "explicacao": "Na fase de modelagem de dados do RAD, os dados coletados são organizados e agrupados em objetos de negócio que representam as entidades do sistema."
+    },
+    {
+      "id": 36,
+      "tipo": "mc",
+      "pergunta": "A necessidade de imprimir eficiência no desenvolvimento de sistemas levou à criação da metodologia rápida de desenvolvimento de software, mais conhecida pela sigla em inglês: RAD (Rapid Application Development). Um dos princípios do RAD é a entrega contínua de produtos dentro do prazo. Nesse sentido, selecione a opção CORRETA:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Isso permite que a equipe do projeto defina rapidamente a abordagem ideal para entregar o produto no tempo disponível",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Isso permite reduzir custos, desde que, pelo menos, uma parte do sistema esteja funcionando corretamente",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Este princípio garante que o produto terá menos erros",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Prazo sempre deve ser respeitado, mesmo que não seja possível entregar o produto conforme programado",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Desenvolvimento rápido sempre vai reduzir os custos do projeto",
+          "correta": false
+        }
+      ],
+      "explicacao": "A entrega contínua no RAD permite que a equipe adapte rapidamente a abordagem para garantir a entrega dentro do prazo estabelecido."
+    },
+    {
+      "id": 37,
+      "tipo": "mc",
+      "pergunta": "A metodologia do RAD possui diversas vantagens e desvantagens em relação às metodologias de desenvolvimento tradicionais. Nesse sentido, selecione a opção correta sobre as características da metodologia RAD:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Diferente de métodos tradicionais de desenvolvimento, a RAD demanda por intensa colaboração entre desenvolvedores e usuários",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Apesar das diferenças dos métodos tradicionais, se assemelham no sentido de que os sistemas-alvo devem ser modularizados",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "No sentido de atingir a meta da rapidez do desenvolvimento, a metodologia RAD possui poucas reuniões",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Os requisitos funcionais são determinados no início do projeto e não podem ser alterados ao longo do projeto de modo a atingir a rapidez do desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Uma das vantagens mais importantes da metodologia RAD é sua adequação para projetos complexos de grande escala",
+          "correta": false
+        }
+      ],
+      "explicacao": "A colaboração intensa entre desenvolvedores e usuários é uma característica distintiva do RAD em comparação com metodologias tradicionais."
+    },
+    {
+      "id": 38,
+      "tipo": "mc",
+      "pergunta": "Para fazer a escolha de um framework e bibliotecas para desenvolver projetos RAD, é necessário observar diversos critérios. Nesse sentido, selecione a opção CORRETA que justifique a escolha de um determinado framework:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Deve considerar se o framework suporta a linguagem Python por ser enxuta e possuir mais pacotes do que as demais linguagens de programação",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A principal característica a ser considerada refere-se ao tipo de licença do framework",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Deve ser feita para frameworks que deem suporte ao desenvolvimento de aplicações WEB e geração de gráficos",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Deve levar em consideração a qualidade dos componentes visuais, de modo a manter a motivação das partes interessadas no projeto",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Deve estar alinhada com os princípios da RAD, ou seja, suportar o desenvolvimento rápido",
+          "correta": true
+        }
+      ],
+      "explicacao": "A escolha do framework deve priorizar o suporte ao desenvolvimento rápido, que é o princípio fundamental da metodologia RAD."
+    },
+    {
+      "id": 39,
+      "tipo": "mc",
+      "pergunta": "Em uma empresa de software, um novo projeto é iniciado usando a metodologia RAD. O objetivo é desenvolver rapidamente um aplicativo web customizado para um cliente, permitindo a modificação contínua do protótipo durante o desenvolvimento. Qual é um dos principais benefícios do uso da metodologia RAD neste cenário?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Menor custo de desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Independência de feedback do cliente",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Maior segurança no código",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Rápida adaptação a mudanças",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Menos necessidade de testes",
+          "correta": false
+        }
+      ],
+      "explicacao": "A rápida adaptação a mudanças é um dos principais benefícios do RAD, permitindo ajustes contínuos baseados no feedback do cliente."
+    },
+    {
+      "id": 40,
+      "tipo": "mc",
+      "pergunta": "Um dos princípios do RAD é 'Todas as mudanças durante o desenvolvimento são reversíveis'. Nesse sentido, selecione a opção CORRETA:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A versão atual do protótipo pode não corresponder à expectativa do cliente, portanto é adequado retornar a versão anterior que já está aprovada pelo cliente",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "A não flexibilidade da metodologia RAD pode não facilitar o desenvolvimento de protótipos, portanto o desenvolvedor nem sempre pode criar uma versão",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Nas iterações com os usuários, os desenvolvedores podem detectar uma funcionalidade que não atende a um requisito não-funcional. Portanto é necessário voltar a versão anterior",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Dada a flexibilidade da metodologia RAD, a utilização de ferramentas de controle de versões de software é desnecessária, pois os protótipos sempre podem ser recuperados",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "As novas versões devem ter o incremento de apenas uma nova funcionalidade, pois, caso não seja validada pelo usuário, é mais simples retornar a versão anterior que já foi validada",
+          "correta": false
+        }
+      ],
+      "explicacao": "Este princípio permite reverter para versões anteriores quando o protótipo atual não atende às expectativas do cliente, mantendo versões funcionais aprovadas."
+    },
+    {
+      "id": 41,
+      "tipo": "mc",
+      "pergunta": "Um dos princípios do RAD é 'a adequação para fins comerciais é o critério essencial para aceitação de resultados'. Nesse sentido, selecione a opção CORRETA:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Este princípio garante que o produto terá menos erros e, consequentemente, terá menos vulnerabilidades",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "O foco deve ser voltado para cumprir os prazos pré-estabelecidos",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O foco é fazer o desenvolvimento para atender aos requisitos funcionais",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Significa que as melhores práticas para desenvolver um software seguro devem ser aplicadas",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Permite que os desenvolvedores tomem a decisão sobre a aplicação das melhores soluções para o projeto",
+          "correta": false
+        }
+      ],
+      "explicacao": "Este princípio enfatiza que o sistema deve atender às necessidades comerciais e requisitos funcionais como critério principal de aceitação."
+    },
+    {
+      "id": 42,
+      "tipo": "mc",
+      "pergunta": "Na programação com Python, é comum utilizar funções específicas para manipular arquivos de dados. Quando precisamos manipular arquivos em Python, qual função é usada para abrir um arquivo para leitura? Considere a localização padrão do arquivo como sendo o mesmo diretório do script.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "file.open(\"dados.txt\")",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "open(\"dados.txt\", \"r\")",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "read(\"dados.txt\")",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "openFile(\"dados.txt\", \"read\")",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "getFile(\"dados.txt\")",
+          "correta": false
+        }
+      ],
+      "explicacao": "A função open() com o modo \"r\" é a forma correta de abrir um arquivo para leitura em Python."
+    },
+    {
+      "id": 43,
+      "tipo": "mc",
+      "pergunta": "Ao trabalhar com arquivos em Python, é importante entender os atributos de um objeto de arquivo para evitar erros comuns e gerenciar recursos adequadamente. Qual dos seguintes é um atributo válido de um objeto do tipo arquivo que indica se o arquivo está aberto ou fechado?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "opened",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "is_open",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "close_status",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "closed",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "is_closed",
+          "correta": false
+        }
+      ],
+      "explicacao": "O atributo 'closed' retorna True se o arquivo estiver fechado e False se estiver aberto."
+    },
+    {
+      "id": 44,
+      "tipo": "mc",
+      "pergunta": "Considere o script Python apresentado anteriormente, na demonstração prática, que lê, modifica e sobrescreve um arquivo de texto. Se, em vez de abrir o arquivo no modo \"w\" (write) para sobrescrevê-lo, o arquivo fosse aberto no modo \"a\" (append) após ser lido e modificado, qual seria o resultado?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O arquivo original seria duplicado, contendo primeiro o texto original seguido pelo texto modificado",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Apenas o texto modificado seria salvo no arquivo, substituindo o texto original",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O texto modificado seria adicionado ao final do arquivo, após o texto original",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Um novo arquivo seria criado e o original permaneceria inalterado",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "O programa retornaria um erro, pois o modo \"a\" não permite leitura",
+          "correta": false
+        }
+      ],
+      "explicacao": "O modo \"a\" (append) adiciona o novo conteúdo ao final do arquivo existente, preservando o conteúdo original."
+    },
+    {
+      "id": 45,
+      "tipo": "mc",
+      "pergunta": "No script de manipulação de imagem utilizando a biblioteca PIL para manipular arquivos binários, o que aconteceria se os arquivos fossem abertos no modo \"w\" (write) e \"r\" (read) em vez de \"wb\" (write binary) e \"rb\" (read binary) ao tentar escrever os dados binários?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Os dados seriam escritos corretamente sem nenhum erro",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A imagem resultante seria exatamente invertida, conforme pretendido na manipulação",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Seria retornado um erro, pois o método write requer um argumento do tipo string em vez de bytes",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Os dados binários seriam convertidos automaticamente para string antes de serem escritos",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "O arquivo final seria maior devido à conversão incorreta de bytes para strings",
+          "correta": false
+        }
+      ],
+      "explicacao": "Ao usar modo texto (\"r\"/\"w\") com dados binários, o Python tentará converter bytes para string, causando erro pois dados de imagem não podem ser decodificados como texto."
+    },
+    {
+      "id": 46,
+      "tipo": "mc",
+      "pergunta": "Ao trabalhar com manipulação de strings em Python, é comum a necessidade de remover espaços em branco e caracteres de nova linha ao final de strings, especialmente ao ler linhas de um arquivo. Qual método é utilizado para essa finalidade?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "remove()",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "delete()",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "strip()",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "cut()",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "clean()",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método strip() remove espaços em branco e caracteres especiais (como \\n) do início e fim de uma string."
+    },
+    {
+      "id": 47,
+      "tipo": "mc",
+      "pergunta": "Na programação Python, uma compreensão adequada da formatação de strings é fundamental para a apresentação clara de informações. Qual método permite uma manipulação detalhada da apresentação de variáveis dentro de strings, incluindo a definição de largura e precisão?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "String concatenation",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Método join()",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "f-strings",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Método replace()",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Método strip()",
+          "correta": false
+        }
+      ],
+      "explicacao": "As f-strings permitem formatação avançada incluindo especificação de largura, precisão e alinhamento através de expressões como {variavel:10.2f}."
+    },
+    {
+      "id": 48,
+      "tipo": "mc",
+      "pergunta": "No contexto do script Python utilizando a cifra ZENIT POLAR para codificar mensagens, o que aconteceria se o desenvolvedor passasse toda a frase como argumento para o método zenit_polar_replace sem primeiro usar o método split para criar uma lista de palavras?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A codificação não seria aplicada, pois o método requer divisão em palavras",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Apenas as letras no início de cada palavra seriam codificadas",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A codificação seria aplicada da mesma maneira, alterando todas as letras elegíveis na frase completa",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Seria gerado um erro, pois o método replace não pode ser aplicado a strings não segmentadas",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Nenhuma letra seria codificada, mantendo a frase original intacta",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método replace() funciona em strings completas, substituindo todas as ocorrências dos caracteres alvo, independentemente de estarem em palavras separadas."
+    },
+    {
+      "id": 49,
+      "tipo": "mc",
+      "pergunta": "Em Python, a manipulação de arquivos pode resultar em diversos tipos de exceções, que devem ser tratadas para evitar a interrupção do programa de forma inesperada. Analise o código a seguir e responda à questão.\n\ntry:\n    with open('dados.txt', 'r') as arquivo:\n        conteudo = arquivo.read()\nexcept FileNotFoundError:\n    print(\"Arquivo não encontrado.\")\nexcept PermissionError:\n    print(\"Permissão negada.\")\nexcept Exception as e:\n    print(f\"Erro inesperado: {e}\")\n\nO que será exibido na tela se o arquivo dados.txt não existir no diretório?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Nenhuma mensagem será exibida",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "\"Arquivo não encontrado.\"",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "\"Permissão negada.\"",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "\"Erro inesperado: {e}\"",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "O programa será encerrado sem exibir nenhuma mensagem",
+          "correta": false
+        }
+      ],
+      "explicacao": "Quando o arquivo não existe, a exceção FileNotFoundError é levantada e capturada pelo primeiro bloco except, exibindo a mensagem correspondente."
+    },
+    {
+      "id": 50,
+      "tipo": "mc",
+      "pergunta": "As operações de arquivos em Python, como renomear e remover, são cruciais para a gestão eficiente de dados. Analise o código a seguir e responda à questão.\n\nimport os\ntry:\n    os.remove('arquivo.txt')\nexcept FileNotFoundError:\n    print(\"Arquivo não encontrado.\")\nexcept PermissionError:\n    print(\"Permissão negada.\")\nexcept IsADirectoryError:\n    print(\"Não é possível remover, é um diretório.\")\nexcept Exception as e:\n    print(f\"Erro inesperado: {e}\")\n\nO que será exibido na tela se o arquivo.txt for, na verdade, um diretório?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Nenhuma mensagem será exibida",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "\"Arquivo não encontrado.\"",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "\"Permissão negada.\"",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "\"Não é possível remover, é um diretório.\"",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "\"Erro inesperado: {e}\"",
+          "correta": false
+        }
+      ],
+      "explicacao": "Quando se tenta remover um diretório com os.remove(), é levantada a exceção IsADirectoryError, que é capturada pelo terceiro bloco except."
+    },
+    {
+      "id": 51,
+      "tipo": "mc",
+      "pergunta": "Em Python, as operações com diretórios são fundamentais para a organização e manipulação de arquivos. Analise as afirmações sobre operações com diretórios e marque a alternativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Para criar um novo diretório, utilizamos a função os.makedir(caminho), e para removê-lo, usamos a função os.removedir(caminho)",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A função os.listdir(caminho) é usada para criar uma lista de todos os arquivos e subdiretórios em um diretório especificado",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A função os.remove(caminho) é usada para remover diretórios e a função os.rmdir(caminho) é usada para remover arquivos",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A função os.mkdir(caminho) cria um novo diretório e a função os.rmdir(caminho) remove um diretório vazio",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "A função os.rename(caminho_antigo, caminho_novo) só pode ser usada para renomear arquivos, não diretórios",
+          "correta": false
+        }
+      ],
+      "explicacao": "os.mkdir() cria diretórios e os.rmdir() remove diretórios vazios. Para remover diretórios não vazios, usa-se shutil.rmtree()."
+    },
+    {
+      "id": 52,
+      "tipo": "mc",
+      "pergunta": "Considere o seguinte código em Python utilizado para abrir um arquivo para leitura utilizando o módulo \"os\".\n\nimport os \ncaminho_origem = os.path.join(\"diretorio_trabalho\", \"arquivo_origem.txt\") \narquivo = open(caminho_origem, \"r\")\n\nO que aconteceria se o aluno substituísse a utilização do os.path.join por open(\"diretorio_trabalho/arquivo_origem.txt\", \"r\") para definir o caminho do arquivo?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O código sempre funcionaria corretamente, sem nenhuma diferença observável",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "O código geraria um erro de sintaxe, pois open não pode ser usado para concatenar strings",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O código tentaria abrir um arquivo chamado \"diretorio/arquivo\" e falharia porque o arquivo não existe",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "O código não funcionaria em sistemas Unix, em que o separador de diretórios é /",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "O código funcionaria apenas em sistemas Windows, em que o separador de diretórios é \\",
+          "correta": true
+        }
+      ],
+      "explicacao": "Usar \"/\" explicitamente funcionaria no Unix/Linux, mas falharia no Windows que usa \"\\\". O os.path.join garante compatibilidade entre sistemas."
+    },
+    {
+      "id": 53,
+      "tipo": "mc",
+      "pergunta": "O módulo shutil em Python é amplamente utilizado para operações de manipulação de arquivos, como mover e copiar. Considere o seguinte código que tenta mover arquivos para diretórios específicos com base em suas extensões.\n\nimport os\nimport shutil\n\ndef mover_arquivos(diretorio_origem):\n    for arquivo in os.listdir(diretorio_origem):\n        caminho_arquivo = os.path.join(diretorio_origem, arquivo)\n        if os.path.isfile(caminho_arquivo):\n            extensao = arquivo.split('.')[-1].lower()\n            if extensao in ['pdf', 'txt', 'jpg']:\n                diretorio_destino = os.path.join(diretorio_origem, extensao)\n                if not os.path.exists(diretorio_destino):\n                    os.makedirs(diretorio_destino)\n                shutil.move(caminho_arquivo, diretorio_destino)\n                print(f\"{arquivo} movido para {diretorio_destino}.\")\n\nQual das opções a seguir é necessária para que o código funcione corretamente se os diretórios de destino não existirem inicialmente?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Alterar shutil.move para shutil.copy",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Remover a linha os.path.isfile(caminho_arquivo)",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Adicionar uma verificação de permissões antes de shutil.move",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Garantir que os.makedirs(diretorio_destino) seja chamado antes de shutil.move",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Remover a verificação de extensão dos arquivos",
+          "correta": false
+        }
+      ],
+      "explicacao": "O código já verifica se o diretório destino existe com os.path.exists() e cria com os.makedirs() se necessário, garantindo que o diretório exista antes do move."
+    },
+    {
+      "id": 54,
+      "tipo": "mc",
+      "pergunta": "Para desenvolver aplicações Python que interajam com diferentes sistemas de gerenciamento de bancos de dados (SGBDs), precisamos selecionar o conector apropriado. Considere as seguintes opções de conectores para PostgreSQL e MySQL. Qual conector é mais adequado para se conectar a um banco de dados PostgreSQL em uma aplicação Python?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "MySQLclient",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "PyMySQL",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "psycopg2",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "MySQL Connector/Python",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "sqlite3",
+          "correta": false
+        }
+      ],
+      "explicacao": "psycopg2 é o conector mais popular e amplamente utilizado para PostgreSQL em Python, oferecendo suporte completo às funcionalidades do PostgreSQL."
+    },
+    {
+      "id": 55,
+      "tipo": "mc",
+      "pergunta": "Em um ambiente empresarial, garantir a integridade e a eficiência das operações de banco de dados é fundamental para o sucesso de uma aplicação. Portanto, após cada transação, é necessário executar um comando de confirmação no banco de dados. Qual método é utilizado para confirmar todas as operações pendentes em uma conexão de banco de dados em Python?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "rollback",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "execute",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "fetchall",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "commit",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "close",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método commit() é usado para confirmar permanentemente todas as operações realizadas em uma transação no banco de dados."
+    },
+    {
+      "id": 56,
+      "tipo": "mc",
+      "pergunta": "A escolha adequada dos tipos de dados é fundamental para o desempenho e a integridade dos bancos de dados em aplicações reais. Qual tipo de dado é usado para armazenar valores de texto em um banco de dados SQLite?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "INTEGER",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "TEXT",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "BLOB",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "REAL",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "NUMERIC",
+          "correta": false
+        }
+      ],
+      "explicacao": "O tipo TEXT em SQLite é usado para armazenar dados de texto, suportando strings de comprimento variável."
+    },
+    {
+      "id": 57,
+      "tipo": "mc",
+      "pergunta": "A criação de tabelas em um banco de dados permite organizar e estruturar dados de forma eficiente. Qual comando SQL é utilizado para criar uma tabela no banco de dados?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "INSERT TABLE",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "DELETE TABLE",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "UPDATE TABLE",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "CREATE TABLE",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "ALTER TABLE",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando CREATE TABLE é usado para criar novas tabelas no banco de dados, definindo sua estrutura e colunas."
+    },
+    {
+      "id": 58,
+      "tipo": "mc",
+      "pergunta": "Alterar e remover tabelas em um banco de dados ajuda a manter a flexibilidade e a adaptabilidade das aplicações. Qual comando SQL é utilizado para adicionar uma nova coluna a uma tabela existente?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "CREATE COLUMN",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "ALTER TABLE",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "ADD COLUMN",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "MODIFY TABLE",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "UPDATE TABLE",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando ALTER TABLE é usado para modificar a estrutura de uma tabela existente, incluindo adicionar novas colunas."
+    },
+    {
+      "id": 59,
+      "tipo": "mc",
+      "pergunta": "Na criação de um sistema de gerenciamento de eventos, a ordem de criação das tabelas no banco de dados é um fator importante. O que aconteceria se o desenvolvedor criasse a tabela de eventos antes da tabela de locais?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A tabela de eventos seria criada corretamente",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Nada, a ordem das tabelas não importa",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A tabela de eventos criaria uma referência nula à tabela de locais",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A tabela de eventos seria criada sem chaves estrangeiras",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A tabela de eventos não seria criada devido à ausência da tabela de locais",
+          "correta": true
+        }
+      ],
+      "explicacao": "Se a tabela de eventos tem uma chave estrangeira referenciando a tabela de locais, esta deve existir primeiro para que a criação da tabela de eventos seja bem-sucedida."
+    },
+    {
+      "id": 60,
+      "tipo": "mc",
+      "pergunta": "Inserir dados em uma tabela é uma tarefa comum no desenvolvimento de aplicações que interagem com bancos de dados. Qual comando SQL é utilizado para inserir um novo registro em uma tabela?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "UPDATE INTO",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "INSERT INTO",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "ADD INTO",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "CREATE INTO",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "SELECT INTO",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando INSERT INTO é usado para adicionar novos registros em uma tabela do banco de dados."
+    },
+    {
+      "id": 61,
+      "tipo": "mc",
+      "pergunta": "Escolher os delimitadores corretos para parâmetros em diferentes conectores é uma habilidade relevante para o desenvolvimento de aplicações. Qual delimitador é utilizado para parâmetros em queries dinâmicas com o conector sqlite3 em Python?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "%s",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "%n",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "?",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "$",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "&",
+          "correta": false
+        }
+      ],
+      "explicacao": "O conector sqlite3 em Python utiliza o ponto de interrogação (?) como delimitador para parâmetros em queries dinâmicas."
+    },
+    {
+      "id": 62,
+      "tipo": "mc",
+      "pergunta": "O uso de queries dinâmicas com nomes é uma prática avançada que melhora a legibilidade e a segurança do código em aplicações que interagem com bancos de dados. Qual é o delimitador correto para usar argumentos nomeados em queries dinâmicas com o conector sqlite3?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "%s",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "¶m",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "?param",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": ":param",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "#param",
+          "correta": false
+        }
+      ],
+      "explicacao": "O conector sqlite3 suporta parâmetros nomeados usando o formato :nome_parametro para melhor legibilidade e manutenção do código."
+    },
+    {
+      "id": 63,
+      "tipo": "mc",
+      "pergunta": "A atualização e a remoção de dados são operações comuns em bancos de dados, com o objetivo de manter a precisão e a integridade das informações. Qual comando SQL é utilizado para atualizar registros em uma tabela?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "DELETE",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "INSERT",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "UPDATE",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "SELECT",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "ALTER",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando UPDATE é utilizado para modificar registros existentes em uma tabela do banco de dados."
+    },
+    {
+      "id": 64,
+      "tipo": "mc",
+      "pergunta": "Durante a inserção de dados nas tabelas de um banco de dados SQLite, é importante usar corretamente os delimitadores de parâmetros. Sendo possível, inclusive, utilizar parâmetros nomeados. O que aconteceria se o desenvolvedor substituísse os \"?\" pelos parâmetros :nome, :preco, :estoque na inserção de Produtos mantendo o restante do código da mesma forma?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A inserção falharia devido a um erro de sintaxe",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A inserção funcionaria perfeitamente sem nenhuma alteração adicional",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O Python geraria uma exceção de tipo",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "O código precisaria ser adaptado para passar um dicionário com os valores",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "A ordem dos valores se tornaria irrelevante",
+          "correta": false
+        }
+      ],
+      "explicacao": "Ao usar parâmetros nomeados, é necessário passar um dicionário onde as chaves correspondem aos nomes dos parâmetros, em vez de uma tupla com valores posicionais."
+    },
+    {
+      "id": 65,
+      "tipo": "mc",
+      "pergunta": "Selecionar registros em um banco de dados permite recuperar informações necessárias. Qual cláusula é utilizada em conjunto com o comando SELECT para filtrar registros específicos em uma tabela?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "GROUP BY",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "ORDER BY",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "WHERE",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "HAVING",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "JOIN",
+          "correta": false
+        }
+      ],
+      "explicacao": "A cláusula WHERE é usada com SELECT para filtrar registros baseados em condições específicas."
+    },
+    {
+      "id": 66,
+      "tipo": "mc",
+      "pergunta": "A seleção de registros usando junções é uma técnica avançada que permite combinar dados de várias tabelas. Qual comando SQL é utilizado para mesclar registros de duas ou mais tabelas?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "UNION",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "JOIN",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "INTERSECT",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "CONNECT",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "MERGE",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando JOIN é utilizado para combinar registros de duas ou mais tabelas baseado em uma condição relacionada entre elas."
+    },
+    {
+      "id": 67,
+      "tipo": "mc",
+      "pergunta": "Ao desenvolver uma aplicação de interface gráfica em Python, você deseja escolher um framework que ofereça suporte abrangente para desenvolvimento tanto para desktop quanto para aplicações web. Qual dos seguintes frameworks seria a escolha mais adequada para atender a essa necessidade?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Tkinter",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "PyQt",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Kivy",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Flexx",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "PySimpleGUI",
+          "correta": false
+        }
+      ],
+      "explicacao": "Flexx é um framework que oferece suporte para desenvolvimento tanto de aplicações desktop quanto web, sendo adequado para essa necessidade."
+    },
+    {
+      "id": 68,
+      "tipo": "mc",
+      "pergunta": "Considerando a implementação de interfaces gráficas em projetos de software, qual das seguintes afirmações melhor descreve uma desvantagem comum das aplicações GUI?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Redução do tempo de desenvolvimento devido à simplificação da interface",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Maior consumo de recursos computacionais",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Menor necessidade de documentação",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Aumento da portabilidade entre diferentes sistemas operacionais",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Facilidade na implementação de funcionalidades de rede",
+          "correta": false
+        }
+      ],
+      "explicacao": "Aplicações GUI geralmente consomem mais recursos computacionais (memória, processamento) devido aos elementos visuais e interações."
+    },
+    {
+      "id": 69,
+      "tipo": "mc",
+      "pergunta": "A linguagem Python é muito usada em diversas aplicações devido à simplicidade da sintaxe e por possuir muitos pacotes disponíveis que podem ser instalados por meio do comando 'pip install'. Sobre o comando 'pip', selecione a opção correta:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Funciona como um gerenciador de dependências",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Independentemente do ambiente de desenvolvimento, o comando 'pip' deve ser usado da mesma forma",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O comando 'pip' é o único meio de fazer a instalação de pacotes no Python",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Por se tratar de um comando nativo do Python, não é necessário se preocupar com a versão do 'pip'",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "O 'pip' é o interpretador utilizado pelo Python para gerar o executável",
+          "correta": false
+        }
+      ],
+      "explicacao": "O pip é o gerenciador de pacotes padrão do Python, usado para instalar e gerenciar dependências de projetos."
+    },
+    {
+      "id": 70,
+      "tipo": "mc",
+      "pergunta": "A biblioteca Tkinter é considerada a biblioteca padrão do Python para o desenvolvimento de interface gráfica. Em relação à biblioteca Tkinter, selecione a opção correta:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A biblioteca Tkinter sempre será a melhor escolha para um projeto de interface gráfica, pois é compatível com múltiplas plataformas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Seus componentes não se integram diretamente na linguagem Python, sendo necessário usar outros programas para ter acesso aos seus recursos",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Seus componentes GUIs são considerados avançados e, portanto, apropriados para aplicações de jogos, por exemplo",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A biblioteca Tkinter é a base para que todos os outros frameworks GUI possam ser utilizados",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Para testar se ela está instalada corretamente, pode-se escrever duas linhas de código que são import tkinter e tkinter._test()",
+          "correta": true
+        }
+      ],
+      "explicacao": "O método tkinter._test() é uma forma válida de testar se a biblioteca está funcionando corretamente."
+    },
+    {
+      "id": 71,
+      "tipo": "mc",
+      "pergunta": "Ao desenvolver uma aplicação GUI em Python para gerenciamento de tarefas, você decide usar a biblioteca Tkinter devido à sua integração direta com Python. Qual das seguintes características do Tkinter facilita a criação de uma interface intuitiva para os usuários?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Suporte nativo para multithreading",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Integração com bases de dados SQL",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Ampla gama de widgets interativos",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Capacidades avançadas de renderização 3D",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Suporte integrado para criptografia de dados",
+          "correta": false
+        }
+      ],
+      "explicacao": "Tkinter oferece uma ampla variedade de widgets como botões, campos de texto, menus, etc., que facilitam a criação de interfaces intuitivas."
+    },
+    {
+      "id": 72,
+      "tipo": "mc",
+      "pergunta": "Diferentes widgets podem ser implementados para melhorar a funcionalidade de uma aplicação e a experiência de seus usuários. Qual dos seguintes widgets é mais adequado para permitir que os usuários escolham entre várias opções predefinidas?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Text",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Button",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Slider",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Radiobutton",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Entry",
+          "correta": false
+        }
+      ],
+      "explicacao": "O widget Radiobutton é especificamente projetado para permitir que usuários escolham uma opção entre várias predefinidas."
+    },
+    {
+      "id": 73,
+      "tipo": "mc",
+      "pergunta": "Considere o fragmento de código Python abaixo.\n\nimport tkinter\nlacuna_I = lacuna_II.Tk()\nlacuna_III.mainloop()\n\nPara que o código seja compilado e executado corretamente, as palavras lacuna_I, lacuna_II e lacuna_III devem ser substituídas, respectivamente, por:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "tk, janela, tkinter",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "raiz, tkinter, janela",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "tkinter, raiz, janela",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "raiz, tkinter e raiz",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "tkinter, janela e raiz",
+          "correta": false
+        }
+      ],
+      "explicacao": "A forma correta é: raiz = tkinter.Tk() seguido de raiz.mainloop() para criar a janela principal e iniciar o loop de eventos."
+    },
+    {
+      "id": 74,
+      "tipo": "mc",
+      "pergunta": "O Tkinter possui diversos componentes (widgets) que são úteis para criar aplicações que vão facilitar a interação do usuário com o sistema. Nesse sentido, selecione a opção que relaciona corretamente o componente e sua respectiva funcionalidade.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Button: fornece para o usuário a possibilidade de selecionar várias opções ao mesmo tempo",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Checkbutton: é usado para a confirmação de uma ação",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Entry: exibe uma mensagem de texto para o usuário",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Label: é usado para fornecer uma legenda para outros componentes do projeto",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Dialog: produz uma janela com um 'combobox'",
+          "correta": false
+        }
+      ],
+      "explicacao": "O componente Label é usado para exibir texto estático e fornecer legendas para outros componentes da interface."
+    },
+    {
+      "id": 75,
+      "tipo": "mc",
+      "pergunta": "Em uma aplicação Python que interage com um banco de dados PostgreSQL, o desenvolvedor precisa garantir que as alterações feitas em uma transação sejam permanentes e visíveis para outros usuários. Qual comando deve ser utilizado para confirmar as operações realizadas durante a transação?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "cursor.execute()",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "connection.rollback()",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "connection.close()",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "cursor.fetchall()",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "connection.commit()",
+          "correta": true
+        }
+      ],
+      "explicacao": "O método connection.commit() é usado para confirmar as transações e tornar as alterações permanentes no banco de dados."
+    },
+    {
+      "id": 76,
+      "tipo": "mc",
+      "pergunta": "Existem muitas bibliotecas disponíveis para Python para fazer interface com sistemas gerenciadores de bancos de dados. Entre elas, está a psycopg2. Essa biblioteca faz interface com o PostgreSQL, que é um sistema importante para desenvolver aplicações reais. Nesse sentido, selecione a opção que relaciona as APIs do psycopg2 com suas funcionalidades.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "cursor.rowcount: indica se o comando sql – inserção, ou exclusão - foi executado com sucesso",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "connection.commit(): abre a conexão com o banco de dados",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "cursor.execute: é aplicada para executar uma instrução SQL",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "connection.close(): limpa as variáveis que estão associadas a operações com o banco de dados",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "cursor.execute: fecha a conexão com o banco de dados",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método cursor.execute() é usado para executar instruções SQL no banco de dados PostgreSQL."
+    },
+    {
+      "id": 77,
+      "tipo": "mc",
+      "pergunta": "Considere o fragmento de código Python abaixo que utiliza a biblioteca 'psycopg2' para fazer operações no sistema gerenciador de banco de dados Postgre:\n\nimport psycopg2\nconn = psycopg2.connect(database = 'postgres', user = 'postgres', password = 'senha123', host = '127.0.0.1', port = '5432')\ncursor = conn.cursor()\ncursor.execute('''lacuna_I INTO public.\"AGENDA\" (\"id\", \"nome\", \"telefone\") VALUES (1, 'Pessoa 1', '02199999999')''')\nconn. lacuna_II()\nprint('Inserção realizada com sucesso!')\nconn.lacuna_III()\n\nPara que o código seja compilado e executado corretamente, as palavras lacuna_I, lacuna_II e lacuna_III devem ser substituídas, respectivamente, por:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "UPDATE, connect, close",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "INSERT, fetchone, finally",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "INSERT, commit, close",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "INSERT, cursor e close",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "UPDATE, commit, close",
+          "correta": false
+        }
+      ],
+      "explicacao": "Para inserir dados: INSERT, depois conn.commit() para confirmar a transação, e finalmente conn.close() para fechar a conexão."
+    },
+    {
+      "id": 78,
+      "tipo": "mc",
+      "pergunta": "Existem muitas bibliotecas disponíveis para Python para fazer interface com sistemas gerenciadores de bancos de dados. Entre elas, está a 'psycopg2'. Essa biblioteca faz interface com o PostgreSQL, que é um sistema importante para desenvolver aplicações reais. Nesse sentido, selecione a opção que relaciona as APIs do psycopg2 e suas funcionalidades.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "cursor.rowcount: Indica se o comando sql – inserção, ou exclusão - foi executado com sucesso",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "connection.commit(): Abre a conexão com o banco de dados",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "cursor.execute: É aplicada para executar uma instrução SQL",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "connection.close(): Limpa as variáveis que estão associadas a operações com o banco de dados",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "cursor.execute: Fecha a conexão com o banco de dados",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método cursor.execute() é usado para executar instruções SQL no banco de dados PostgreSQL."
+    },
+    {
+      "id": 79,
+      "tipo": "mc",
+      "pergunta": "Você está desenvolvendo uma aplicação que integra uma interface gráfica com um banco de dados, utilizando Tkinter para a GUI e PostgreSQL para o banco de dados. Qual a principal vantagem de integrar uma interface gráfica (GUI) com operações de banco de dados em uma aplicação?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Melhoria na velocidade de execução dos comandos SQL",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Redução no uso de memória pela aplicação",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Facilidade para o usuário final interagir com os dados",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Aumento da segurança dos dados armazenados",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Eliminação da necessidade de validação de dados",
+          "correta": false
+        }
+      ],
+      "explicacao": "A principal vantagem é facilitar a interação do usuário final com os dados, tornando as operações mais intuitivas e acessíveis."
+    },
+    {
+      "id": 80,
+      "tipo": "mc",
+      "pergunta": "Você está desenvolvendo uma aplicação que insere dados em uma tabela PostgreSQL usando a biblioteca psycopg2 em Python. O que aconteceria se o desenvolvedor não utilizasse o comando conn.commit() após executar uma operação de inserção de dados?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Os dados seriam inseridos corretamente na tabela, mas com um atraso",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Os dados seríamos inseridos corretamente na tabela sem problemas",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Os dados seriam inseridos, mas não estariam disponíveis para outras transações até que a conexão fosse fechada",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Os dados não seriam inseridos na tabela e a operação seria revertida quando a conexão fosse fechada",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Os dados seriam inseridos apenas se a tabela estivesse vazia",
+          "correta": false
+        }
+      ],
+      "explicacao": "Sem o commit(), as alterações não são confirmadas no banco de dados e são revertidas quando a conexão é fechada."
+    },
+    {
+      "id": 81,
+      "tipo": "mc",
+      "pergunta": "Você está desenvolvendo uma aplicação em Python com interface gráfica usando Tkinter para gerenciar um banco de dados de produtos. O que aconteceria se o desenvolvedor não utilizar o comando root.mainloop() no final do script?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A aplicação não será executada e apresentará um erro de sintaxe",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A interface gráfica será exibida, mas não responderá a eventos do usuário",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "A interface gráfica será exibida e funcionará corretamente",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A aplicação funcionará, mas sem conexão ao banco de dados",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A aplicação não conseguirá executar operações CRUD no banco de dados",
+          "correta": false
+        }
+      ],
+      "explicacao": "O mainloop() é essencial para iniciar o loop de eventos do Tkinter, sem ele a interface não responderá a interações do usuário."
+    },
+    {
+      "id": 82,
+      "tipo": "mc",
+      "pergunta": "Você está desenvolvendo uma aplicação em Python com interface gráfica usando Tkinter para gerenciar um banco de dados de livros. Durante a fase de desenvolvimento, você decide fazer uma alteração importante no código. O que aconteceria se o desenvolvedor alterar o método carregar_dados para não limpar mais os itens da Treeview antes de exibir os dados carregados?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A Treeview sempre exibirá os dados corretos dos registros carregados",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A Treeview pode mostrar dados antigos juntamente com os novos dados",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "A aplicação apresentará um erro e não exibirá nenhum dado",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Os registros carregados não serão exibidos na interface gráfica",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A funcionalidade de carregamento de registros deixará de funcionar completamente",
+          "correta": false
+        }
+      ],
+      "explicacao": "Sem limpar a Treeview antes de carregar novos dados, os registros antigos permanecerão misturados com os novos."
+    },
+    {
+      "id": 83,
+      "tipo": "mc",
+      "pergunta": "Considere o fragmento de código Python abaixo que utiliza a biblioteca 'psycopg2' para CRIAR a tabela PRODUTOv2 no PostgreSQL:\n\nimport psycopg2\nlacuna_I\nconn = psycopg2.connect(database = 'postgres', user = 'postgres', password = 'senha123', host = '127.0.0.1', port = '5432')\nprint('Conexão com o Banco de Dados aberta com sucesso!')\ncur = conn.cursor()\ncur.execute('''CREATE TABLE PRODUTOv2\n(CODIGO INT PRIMARY KEY NOT NULL,\nNOME TEXT NOT NULL,\nPRECO CHAR(12));''')\nprint('Tabela criada com sucesso!')\nlacuna_II\nconn.commit()\nconn.close()\n\nSelecione a opção correta, para que o programa execute corretamente:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "As palavras lacuna_I e lacuna_II devem ser substituídas por '#' (símbolo de comentário), pois não afetam a execução do programa",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "O tipo campo 'PRECO' deve ser modificado para 'REAL NOT NULL', caso contrário vai ocorrer um erro na criação da tabela",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "As palavras lacuna_I e lacuna_II devem ser substituídas por 'try:' e 'except (Exception, psycopg2.Error) as error:' para prevenir a ocorrência de exceções",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "A tabela deve ser renomeada para 'PRODUTO', ao invés de 'PRODUTOv2'",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "As palavras lacuna_I e lacuna_II devem ser substituídas por 'Begin', para marcar o início do programa, e 'End', para indicar o fim do trecho sql",
+          "correta": false
+        }
+      ],
+      "explicacao": "A inclusão de blocos try-except é essencial para tratamento adequado de exceções em operações de banco de dados."
+    },
+    {
+      "id": 84,
+      "tipo": "mc",
+      "pergunta": "Durante a execução de um programa em Python podem ocorrer problemas que, se não forem tratados adequadamente, vão interromper o programa e exibir uma mensagem de erro para o usuário sem nenhum tipo de tratamento. Nesse sentido, selecione a opção que apresenta a forma adequada de tratar exceções no Python:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "if-else",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "try-except",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "if-elif",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "try-catch",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "if-else",
+          "correta": false
+        }
+      ],
+      "explicacao": "A estrutura try-except é a forma correta e nativa do Python para tratamento de exceções."
+    },
+    {
+      "id": 85,
+      "tipo": "mc",
+      "pergunta": "Qual das seguintes afirmações melhor descreve a abordagem do desenvolvimento rápido de software (RAD)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O RAD prioriza um planejamento detalhado e rígido antes do início do desenvolvimento, minimizando alterações durante o processo",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "O RAD é um método exclusivo para desenvolvimento de sistemas grandes e complexos, não sendo aplicável a projetos menores",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O RAD é um modelo tradicional de desenvolvimento que segue um ciclo linear, sem interação com as partes interessadas",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A principal característica do RAD é a completa ausência de planejamento e requisitos antes da fase de construção",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A metodologia RAD enfatiza a prototipagem rápida e a colaboração contínua entre desenvolvedores e usuários para acelerar o desenvolvimento de software",
+          "correta": true
+        }
+      ],
+      "explicacao": "O RAD foca na prototipagem iterativa e colaboração contínua com usuários para desenvolvimento ágil de software."
+    },
+    {
+      "id": 86,
+      "tipo": "mc",
+      "pergunta": "Qual é o principal objetivo do planejamento de requisitos no desenvolvimento de software?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Criar o código-fonte do sistema antes de definir suas funcionalidades",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Identificar necessidades do negócio, definir escopo e estabelecer requisitos claros para guiar o desenvolvimento",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Priorizar exclusivamente a estética da interface do usuário sem considerar as funcionalidades do sistema",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Desenvolver um protótipo final sem necessidade de validação com as partes interessadas",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Ignorar restrições e priorizar apenas requisitos sugeridos pelos desenvolvedores",
+          "correta": false
+        }
+      ],
+      "explicacao": "O planejamento de requisitos visa entender as necessidades do negócio e definir claramente o que o sistema deve fazer."
+    },
+    {
+      "id": 87,
+      "tipo": "mc",
+      "pergunta": "Qual é o principal objetivo da elicitação de requisitos no desenvolvimento rápido de software (RAD)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Definir todos os requisitos do sistema logo no início do projeto, sem possibilidade de mudanças",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Eliminar a necessidade de validação dos requisitos, reduzindo o tempo de desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Criar um protótipo final antes de envolver os usuários no processo de desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Identificar e refinar os requisitos do sistema de forma colaborativa, permitindo ajustes ao longo das iterações",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Priorizar apenas requisitos técnicos, ignorando as necessidades dos usuários e do negócio",
+          "correta": false
+        }
+      ],
+      "explicacao": "No RAD, a elicitação de requisitos é um processo iterativo e colaborativo que permite refinamentos contínuos."
+    },
+    {
+      "id": 88,
+      "tipo": "mc",
+      "pergunta": "Durante a aplicação da engenharia de requisitos no desenvolvimento rápido de software (RAD), qual é a sequência correta das etapas abordadas nessa prática?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Desenvolvimento do código → Elicitação de requisitos → Priorização de funcionalidades → Testes finais",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Elicitação de requisitos → Análise de requisitos (gerenciamento de conflitos) → Priorização de requisitos",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Definição do design → Testes de usabilidade → Priorização de requisitos → Codificação",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Levantamento de dados do mercado → Priorização de funcionalidades → Implementação direta do sistema",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Codificação do sistema → Ajuste de requisitos → Validação final sem revisão prévia",
+          "correta": false
+        }
+      ],
+      "explicacao": "No RAD, a sequência correta é: Elicitação de requisitos → Análise de requisitos (gerenciamento de conflitos) → Priorização de requisitos."
+    },
+    {
+      "id": 89,
+      "tipo": "mc",
+      "pergunta": "Se o desenvolvedor alterar a seguinte linha: `self.pedido.append(item)` na função: `adicionar_pedido()` para `self.pedido = item`, o que acontecerá?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O sistema apresentará erro ao tentar visualizar ou finalizar o pedido, pois `self.pedido` deixará de ser uma lista",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "O sistema funcionará normalmente, mas os pedidos serão armazenados de forma mais eficiente",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O pedido será registrado corretamente, mas apenas o último item selecionado ficará armazenado, substituindo os anteriores",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A interface gráfica deixará de exibir os itens do menu corretamente",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Nada mudará no funcionamento do sistema, pois a modificação não afeta a lógica principal",
+          "correta": false
+        }
+      ],
+      "explicacao": "Ao substituir append() por atribuição direta, self.pedido deixa de ser uma lista e passa a ser um único item, causando erros nas operações que esperam uma lista."
+    },
+    {
+      "id": 90,
+      "tipo": "mc",
+      "pergunta": "Qual é a principal função da modelagem de sistema no desenvolvimento rápido de software (RAD)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Criar representações visuais para facilitar a compreensão e comunicação das ideias do sistema",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Substituir completamente o processo de levantamento de requisitos no desenvolvimento do software",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Focar apenas a interface gráfica do sistema, sem considerar sua estrutura de dados",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Garantir que todos os requisitos do sistema sejam definidos antes do início do desenvolvimento, sem alterações posteriores",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Eliminar a necessidade de validação dos requisitos junto aos usuários, acelerando o processo de entrega",
+          "correta": false
+        }
+      ],
+      "explicacao": "A modelagem de sistema cria diagramas e representações visuais que facilitam o entendimento e comunicação entre stakeholders."
+    },
+    {
+      "id": 91,
+      "tipo": "mc",
+      "pergunta": "Qual é o principal objetivo da modelagem de negócios no desenvolvimento rápido de software (RAD)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Criar um modelo genérico de negócios sem considerar as necessidades específicas do cliente",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Mapear os processos e interações do negócio para que o sistema atenda às demandas reais dos usuários",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Substituir completamente a necessidade de elicitação de requisitos no desenvolvimento do software",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Priorizar a implementação do sistema, sem necessidade de representações visuais ou diagramas",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Definir apenas a interface gráfica do sistema, sem considerar os processos internos do negócio",
+          "correta": false
+        }
+      ],
+      "explicacao": "A modelagem de negócios tem como objetivo mapear processos e interações para garantir que o sistema atenda às necessidades reais dos usuários."
+    },
+    {
+      "id": 92,
+      "tipo": "mc",
+      "pergunta": "Qual é o principal objetivo da modelagem de dados no desenvolvimento rápido de software (RAD)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Criar um design visual para a interface do usuário, sem considerar a estrutura dos dados",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Definir como os dados serão estruturados, armazenados e manipulados para garantir eficiência e integridade no sistema",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Eliminar a necessidade de um banco de dados, substituindo-o por arquivos simples de armazenamento",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Desenvolver o banco de dados apenas na fase final do projeto, sem planejamento prévio",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Priorizar apenas a segurança dos dados, sem considerar sua organização e relacionamentos",
+          "correta": false
+        }
+      ],
+      "explicacao": "A modelagem de dados define a estrutura, armazenamento e manipulação dos dados para garantir eficiência e integridade no sistema."
+    },
+    {
+      "id": 93,
+      "tipo": "mc",
+      "pergunta": "Como ocorre a evolução e estabilização do modelo de dados no desenvolvimento rápido de software (RAD)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O modelo de dados é totalmente definido no início do projeto e permanece inalterado durante todo o desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "O modelo de dados é criado apenas na fase final do projeto, sem relação com as etapas anteriores do desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "No RAD, o modelo de dados evolui conforme as entregas dos protótipos, ajustando-se às necessidades do negócio até atingir um estado estável",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "A estabilização do modelo de dados ocorre apenas após a implantação do sistema, sem influência das interações anteriores",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A evolução do modelo de dados ocorre sem necessidade de ajustes ao longo do projeto, pois os requisitos são fixos",
+          "correta": false
+        }
+      ],
+      "explicacao": "No RAD, o modelo de dados evolui iterativamente com os protótipos, ajustando-se continuamente até estabilizar."
+    },
+    {
+      "id": 94,
+      "tipo": "mc",
+      "pergunta": "Qual característica define o design da interface com o usuário no desenvolvimento rápido de software (RAD)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Interfaces estáticas que não podem ser alteradas após a primeira versão do sistema",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Uso exclusivo de elementos gráficos predefinidos, sem possibilidade de adaptação ao usuário",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Desenvolvimento iterativo com prototipagem contínua para refinar a experiência do usuário",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Foco apenas na funcionalidade do sistema, sem considerar usabilidade ou acessibilidade",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Desenvolvimento da interface apenas após a conclusão do backend, sem envolvimento dos usuários",
+          "correta": false
+        }
+      ],
+      "explicacao": "No RAD, o design da interface evolui através de prototipagem iterativa e feedback contínuo dos usuários."
+    },
+    {
+      "id": 95,
+      "tipo": "mc",
+      "pergunta": "Qual é a relação entre a contextualização e a eficiência e eficácia no desenvolvimento rápido de software (RAD)?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A contextualização permite criar interfaces alinhadas às necessidades dos usuários, otimizando a usabilidade e reduzindo retrabalho, tornando o desenvolvimento mais eficiente e eficaz",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "A contextualização foca apenas a aparência do sistema, sem impacto na eficiência e eficácia do desenvolvimento",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "No RAD, a contextualização não influencia a eficiência, pois as interfaces são padronizadas e não precisam de adaptações ao público-alvo",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A contextualização torna o desenvolvimento mais lento e burocrático, reduzindo a eficiência do processo",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A eficiência e a eficácia no RAD dependem exclusivamente da velocidade do desenvolvimento, sem necessidade de considerar a contextualização",
+          "correta": false
+        }
+      ],
+      "explicacao": "A contextualização melhora a eficiência e eficácia ao criar interfaces adequadas ao usuário, reduzindo retrabalho."
+    },
+    {
+      "id": 96,
+      "tipo": "mc",
+      "pergunta": "Qual das alternativas descreve corretamente a principal diferença entre a prototipagem no RAD e em outras metodologias?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "No RAD, os protótipos são utilizados apenas para testar conceitos iniciais, sem evolução para a versão final",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Em outras metodologias, os protótipos servem para demonstrar conceitos, enquanto no RAD os protótipos evoluem até a versão final do sistema",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "O RAD descarta completamente o uso de protótipos, pois o desenvolvimento ocorre sem iterações",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A prototipagem no RAD foca exclusivamente a aparência do sistema, sem preocupação com funcionalidades",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Em todas as metodologias, os protótipos são idênticos, não havendo diferença entre RAD e outras abordagens",
+          "correta": false
+        }
+      ],
+      "explicacao": "No RAD, os protótipos evoluem iterativamente até se tornarem o sistema final, diferentemente de outras metodologias onde são apenas demonstrações."
+    },
+    {
+      "id": 97,
+      "tipo": "mc",
+      "pergunta": "No início de um projeto, é necessário compreender quais são os requisitos que devem ser tratados para atender às demandas do negócio. Nesse sentido, selecione a opção correta relacionada à descrição dos requisitos de um sistema.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Escopo: apresenta pormenores da implementação do sistema",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Interfaces do sistema: descreve os componentes interativos do sistema",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Propósito: apresenta uma descrição do sistema e para quem ele se destina",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Interfaces de usuário: identifica com quais sistemas do usuário será feita a integração do software",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Especificação de requisitos funcionais: define os requisitos técnicos de hardware necessários para a execução do sistema",
+          "correta": false
+        }
+      ],
+      "explicacao": "O propósito descreve o objetivo do sistema e seu público-alvo, sendo fundamental para entender o contexto do projeto."
+    },
+    {
+      "id": 98,
+      "tipo": "mc",
+      "pergunta": "Se o desenvolvedor alterar a seguinte linha: `tabela.insert('', 'end', values=(nome, nota1, nota2, f'{media:.2f}', situacao))` para: `tabela.insert('', 0, values=(nome, nota1, nota2, f'{media:.2f}', situacao))`, o que acontecerá com a exibição dos dados na tabela?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Os novos alunos serão adicionados no início da tabela em vez de no final",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "O sistema apresentará um erro, pois 0 não é um identificador válido para a inserção de dados",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "A tabela ficará travada e não permitirá mais inserções de novos registros",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Os novos alunos serão adicionados ao final da tabela, sem alterações visíveis",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Os dados cadastrados anteriormente serão substituídos pelos novos registros",
+          "correta": false
+        }
+      ],
+      "explicacao": "Ao mudar de 'end' para 0, os novos registros serão inseridos no início da tabela (posição 0) em vez do final."
+    },
+    {
+      "id": 99,
+      "tipo": "mc",
+      "pergunta": "Ao criar um aplicativo de agenda de contatos em Python, você escolhe usar PostgreSQL para armazenar informações de contatos. O aplicativo necessita de recursos para modificar dados existentes, como atualizar endereços ou números de telefone. Qual comando SQL é utilizado para modificar um registro existente no banco de dados PostgreSQL em Python:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "SELECT",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "INSERT INTO",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "UPDATE",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "DELETE FROM",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "CREATE TABLE",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando UPDATE é utilizado para modificar registros existentes em uma tabela do banco de dados."
+    },
+    {
+      "id": 100,
+      "tipo": "mc",
+      "pergunta": "Considere que temos a tabela Produto definida da seguinte forma no nosso banco de dados: CREATE TABLE Produto (codigo INTEGER NOT NULL, nome TEXT NOT NULL, descricao TEXT). Dada as variáveis e o comando execute a seguir: \n>>> produto = {'cod': 123, 'nome_prod': 'Colher'} \n>>> comando = 'INSERT INTO PESSOA X VALUES Y;' \n>>> cursor.execute(comando, pessoa)\n\nQuais os valores de X e Y para que o comando execute seja realizado com sucesso?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "X= vazio; Y = (:cod, :nome_prod)",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "X=(cod nome_prod); Y = (:cod, :nome_prod)",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "X= (codigo, nome); Y = (:cod, :nome_prod)",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "X=vazio; Y=vazio",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "X =(codigo, nome); Y = (:codigo, :nome)",
+          "correta": false
+        }
+      ],
+      "explicacao": "X deve conter os nomes das colunas da tabela (codigo, nome) e Y deve conter os parâmetros nomeados que correspondem às chaves do dicionário (:cod, :nome_prod)."
+    },
+    {
+      "id": 101,
+      "tipo": "mc",
+      "pergunta": "Livia é responsável por refatorar um sistema de controle de estoque. Ela decide implementar o sistema em Python, utilizando SQLite para gerenciar os dados de produtos e fornecedores. Livia começa projetando a esquema do banco de dados. Considerando o texto, analise as afirmativas abaixo:\nI. A definição de tipos de dados é essencial ao criar tabelas no SQLite.\nII. SQLite permite modificar o esquema de uma tabela após sua criação sem restrições\nIII. O relacionamento entre produtos e fornecedores pode ser representado por chaves estrangeiras no SQLite.\nMarque a opção correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Somente I e III estão corretas",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Somente II está correta",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Somente III está correta",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Somente I está correta",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Somente I e II estão corretas",
+          "correta": false
+        }
+      ],
+      "explicacao": "I está correta (tipos de dados são importantes), II está incorreta (SQLite tem restrições para alterar esquemas), III está correta (chaves estrangeiras são suportadas)."
+    },
+    {
+      "id": 102,
+      "tipo": "mc",
+      "pergunta": "Livia é responsável por refatorar um sistema de controle de estoque. Ela decide implementar o sistema em Python, utilizando SQLite para gerenciar os dados de produtos e fornecedores. Livia começa projetando a esquema do banco de dados. Considerando o texto, analise as afirmativas abaixo:\nI. A definição de tipos de dados é essencial ao criar tabelas no SQLite.\nII. SQLite permite modificar o esquema de uma tabela após sua criação sem restrições\nIII. O relacionamento entre produtos e fornecedores pode ser representado por chaves estrangeiras no SQLite.\nMarque a opção correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Somente I e III estão corretas",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Somente II está correta",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Somente III está correta",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Somente I está correta",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Somente I e II estão corretas",
+          "correta": false
+        }
+      ],
+      "explicacao": "I está correta (tipos de dados são importantes), II está incorreta (SQLite tem restrições para alterar esquemas), III está correta (chaves estrangeiras são suportadas)."
+    },
+    {
+      "id": 103,
+      "tipo": "mc",
+      "pergunta": "Uma empresa de logística deseja implementar um sistema para gerenciar sua frota de veículos. O desenvolvedor opta por utilizar Python e SQLite, planejando tabelas para veículos, motoristas e manutenções. Ele começa criando a tabela de veículos. No contexto do SQLite em Python, qual comando SQL é usado para criar uma nova tabela?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "CREATE TABLE",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "NEW TABLE",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "INIT TABLE",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "MAKE TABLE",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "SETUP TABLE",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando CREATE TABLE é usado para criar novas tabelas no banco de dados SQLite."
+    },
+    {
+      "id": 104,
+      "tipo": "mc",
+      "pergunta": "Uma empresa de logística deseja implementar um sistema para gerenciar sua frota de veículos. O desenvolvedor opta por utilizar Python e SQLite, planejando tabelas para veículos, motoristas e manutenções. Ele começa criando a tabela de veículos. No contexto do SQLite em Python, qual comando SQL é usado para criar uma nova tabela?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "CREATE TABLE",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "NEW TABLE",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "INIT TABLE",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "MAKE TABLE",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "SETUP TABLE",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando CREATE TABLE é usado para criar novas tabelas no banco de dados SQLite."
+    }
+  ]
+}
+
