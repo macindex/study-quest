@@ -167,23 +167,45 @@ function createStatsContainer() {
     }
 }
 
-// Função para processar e embaralhar as questões
+// ATUALIZADA: Função para processar e embaralhar as questões mantendo as letras fixas
 function processAndShuffleQuestions(originalQuestions) {
     return originalQuestions.map(question => {
+        // Criar um array com as letras fixas
+        const letrasFixas = ['A', 'B', 'C', 'D', 'E'];
+        
         // Encontrar a alternativa correta original
         const originalCorrectIndex = question.alternativas.findIndex(alt => alt.correta === true);
         const originalCorrectAlternative = question.alternativas[originalCorrectIndex];
         
-        // Embaralhar as alternativas
-        const shuffledAlternatives = shuffleArray(question.alternativas);
+        // Embaralhar apenas o conteúdo das alternativas (mantendo a ordem das letras)
+        const alternativasSemLetras = question.alternativas.map(alt => ({
+            texto: alt.texto,
+            correta: alt.correta
+        }));
+        
+        const shuffledContent = shuffleArray(alternativasSemLetras);
+        
+        // Reconstruir as alternativas com as letras fixas na ordem A, B, C, D, E
+        const shuffledAlternatives = letrasFixas.map((letra, index) => {
+            // Se existir conteúdo embaralhado para esta posição, usar ele
+            if (index < shuffledContent.length) {
+                return {
+                    letra: letra,
+                    texto: shuffledContent[index].texto,
+                    correta: shuffledContent[index].correta
+                };
+            }
+            // Caso contrário, manter a alternativa original (se existir)
+            return question.alternativas[index] || { letra: letra, texto: '', correta: false };
+        });
         
         // Encontrar a nova posição da alternativa correta
         const newCorrectIndex = shuffledAlternatives.findIndex(alt => 
-            alt.letra === originalCorrectAlternative.letra && 
-            alt.texto === originalCorrectAlternative.texto
+            alt.texto === originalCorrectAlternative.texto && 
+            alt.correta === true
         );
         
-        // Atualizar a propriedade correta nas alternativas embaralhadas
+        // Garantir que apenas uma alternativa seja marcada como correta
         shuffledAlternatives.forEach((alt, index) => {
             alt.correta = (index === newCorrectIndex);
         });
@@ -191,8 +213,8 @@ function processAndShuffleQuestions(originalQuestions) {
         return {
             ...question,
             alternativas: shuffledAlternatives,
-            originalCorrectIndex: originalCorrectIndex, // Guardar para referência se necessário
-            shuffledCorrectIndex: newCorrectIndex // Nova posição da correta
+            originalCorrectIndex: originalCorrectIndex,
+            shuffledCorrectIndex: newCorrectIndex
         };
     });
 }
@@ -246,7 +268,7 @@ function getQuestion(i) {
     const questionText = document.getElementById('questao');
     questionText.innerHTML = shuffledQuestions[i].pergunta;
     
-    // Preencher as alternativas (agora embaralhadas)
+    // Preencher as alternativas (agora embaralhadas mas com letras fixas)
     shuffledQuestions[i].alternativas.forEach((alternative, x) => {
         const altElement = document.getElementById(`alternative${x}`);
         altElement.textContent = alternative.letra + ". " + alternative.texto;
