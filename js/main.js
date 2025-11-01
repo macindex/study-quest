@@ -423,7 +423,7 @@ function addQuestionsToAnswerArray(questionSelected) {
 
 // Usando jQuery quando disponível, caso contrário usa JavaScript vanilla
 function initializeEventListeners() {
-    // Event listeners para os radios
+    // Event listeners para os radios (mantido para compatibilidade)
     const radios = document.querySelectorAll('input[type="radio"]');
     radios.forEach(radio => {
         radio.addEventListener('click', function() {
@@ -432,12 +432,15 @@ function initializeEventListeners() {
         });
     });
 
+    // ATUALIZAÇÃO: Inicializar eventos de clique nas alternativas
+    initializeChoiceClickEvents();
+    enhanceChoiceItemsStyle();
+
     // Event listeners para os botões de navegação
     document.getElementById('prevBtn').addEventListener('click', function() {
         if (countQuestions > 0) {
             countQuestions -= 1;
             getQuestion(countQuestions);
-            // ATUALIZAÇÃO: Resetar botões de solução ao voltar para questão anterior
             resetSolutionButtons();
         }
     });
@@ -446,7 +449,6 @@ function initializeEventListeners() {
         if (countQuestions < shuffledQuestions.length - 1) {
             countQuestions += 1;
             getQuestion(countQuestions);
-            // ATUALIZAÇÃO: Resetar botões de solução ao avançar para próxima questão
             resetSolutionButtons();
         } else if (countQuestions === shuffledQuestions.length - 1) {
             countQuestions += 1;
@@ -460,16 +462,34 @@ function initializeEventListeners() {
 // Função alternativa usando jQuery se disponível
 function initializeWithJQuery() {
     if (typeof $ !== 'undefined') {
+        // Mantém o evento original nos radios
         $('input:radio').click(function () {
             const radioId = $(this).attr('id').split('')[1];
             addQuestionsToAnswerArray({ id: actualQuestion.id, selected: parseInt(radioId) });
         });
 
+        // ATUALIZAÇÃO: Evento de clique nas alternativas com jQuery
+        $('.multi-choice-item').off('click').on('click', function() {
+            const radioInput = $(this).find('input[type="radio"]');
+            if (radioInput.length > 0) {
+                radioInput.prop('checked', true);
+                const radioId = radioInput.attr('id').split('')[1];
+                addQuestionsToAnswerArray({ id: actualQuestion.id, selected: parseInt(radioId) });
+            }
+        });
+
+        // Estilo com jQuery
+        $('.multi-choice-item').css('cursor', 'pointer')
+            .hover(
+                function() { $(this).css('background-color', '#f8f9fa'); },
+                function() { $(this).css('background-color', ''); }
+            );
+
+        // Restante do código permanece igual...
         $('#prevBtn').click(function () {
             if (countQuestions > 0) {
                 countQuestions -= 1;
                 getQuestion(countQuestions);
-                // ATUALIZAÇÃO: Resetar botões de solução ao voltar para questão anterior
                 resetSolutionButtons();
             }
         });
@@ -478,7 +498,6 @@ function initializeWithJQuery() {
             if (countQuestions < shuffledQuestions.length - 1) {
                 countQuestions += 1;
                 getQuestion(countQuestions);
-                // ATUALIZAÇÃO: Resetar botões de solução ao avançar para próxima questão
                 resetSolutionButtons();
             } else if (countQuestions === shuffledQuestions.length - 1) {
                 countQuestions += 1;

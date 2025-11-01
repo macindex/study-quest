@@ -242,6 +242,26 @@
     }
 }
 
+.multi-choice-item {
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+}
+
+.multi-choice-item:hover {
+    background-color: #f8f9fa !important;
+}
+
+.multi-choice-item:active {
+    background-color: #e9ecef !important;
+}
+
+/* Garantir que o texto da alternativa também tenha cursor pointer */
+.multi-choice-letter {
+    cursor: pointer;
+}
+
 /* Responsividade */
 @media (max-width: 576px) {
     .stats-display {
