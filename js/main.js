@@ -36,6 +36,73 @@ function updateStatsDisplay() {
         }
     }
 }
+// NOVA FUNÇÃO: Permitir clique em toda a área da alternativa
+function initializeChoiceClickEvents() {
+    // Seleciona todos os itens de múltipla escolha
+    const choiceItems = document.querySelectorAll('.multi-choice-item');
+    
+    choiceItems.forEach(item => {
+        // Remove event listener anterior se existir para evitar duplicação
+        item.removeEventListener('click', handleChoiceClick);
+        // Adiciona o event listener para clique
+        item.addEventListener('click', handleChoiceClick);
+    });
+}
+
+// Função para lidar com o clique na alternativa
+function handleChoiceClick(event) {
+    // Encontra o input radio dentro do item clicado
+    const radioInput = this.querySelector('input[type="radio"]');
+    
+    // Se encontrou um radio input
+    if (radioInput) {
+        // Marca o radio como selecionado
+        radioInput.checked = true;
+        
+        // Dispara o evento change no radio para garantir que outras funções sejam notificadas
+        const changeEvent = new Event('change', { bubbles: true });
+        radioInput.dispatchEvent(changeEvent);
+        
+        // Dispara o evento click no radio também
+        const clickEvent = new Event('click', { bubbles: true });
+        radioInput.dispatchEvent(clickEvent);
+        
+        // Obtém o ID do radio para salvar a resposta
+        const radioId = radioInput.id.split('')[1];
+        addQuestionsToAnswerArray({ 
+            id: actualQuestion.id, 
+            selected: parseInt(radioId) 
+        });
+    }
+}
+// ATUALIZADA: Função para melhorar o estilo visual das alternativas clicáveis
+function enhanceChoiceItemsStyle() {
+    const choiceItems = document.querySelectorAll('.multi-choice-item');
+    
+    choiceItems.forEach(item => {
+        // Adiciona estilo de cursor pointer
+        item.style.cursor = 'pointer';
+        
+        // Adiciona efeito visual ao passar o mouse
+        item.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#f8f9fa';
+            this.style.transition = 'background-color 0.2s ease';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = '';
+        });
+        
+        // Adiciona efeito visual ao clicar
+        item.addEventListener('mousedown', function() {
+            this.style.backgroundColor = '#e9ecef';
+        });
+        
+        item.addEventListener('mouseup', function() {
+            this.style.backgroundColor = '#f8f9fa';
+        });
+    });
+}
 
 // NOVA FUNÇÃO: Atualizar estatísticas apenas para questões com solução revelada
 function updateStatsAfterReveal() {
@@ -290,6 +357,12 @@ function getQuestion(i) {
     
     // ATUALIZAÇÃO: Resetar os botões de solução ao carregar nova questão
     resetSolutionButtons();
+    
+    // ATUALIZAÇÃO: Inicializar eventos de clique nas alternativas
+    setTimeout(() => {
+        initializeChoiceClickEvents();
+        enhanceChoiceItemsStyle();
+    }, 50);
     
     // Atualizar estado dos botões de navegação
     updateNavigationButtons();
