@@ -3432,7 +3432,338 @@
         }
       ],
       "explicacao": "O comando CREATE TABLE é usado para criar novas tabelas no banco de dados SQLite."
+    },
+    {
+      "id": 105,
+      "tipo": "mc",
+      "pergunta": "Dentro do universo de programação com Python para bancos de dados, é fundamental compreender o modelo de dados e a criação de tabelas. Utilizando o SQLite, o desenvolvedor pode criar tabelas que refletem entidades e relacionamentos. Por exemplo, no modelo apresentado, temos entidades como Pessoa, Veiculo e Marca. Ao definir uma tabela, especificamos seus atributos e tipos de dados, sendo crucial entender a tabela de ___ do SQLite para escolher os tipos apropriados. Além disso, ao modificar estruturas de tabelas existentes, comandos SQL como ALTER TABLE são usados para ___ atributos, enquanto o comando DROP TABLE é utilizado para ___ uma tabela do banco de dados. Assinale a alternativa que contém a sequência correta para preencher as lacunas acima:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Afinidades - Adicionar - Excluir",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Correspondências - Remover - Criar",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Relações - Modificar - Eliminar",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Afinidades - Modificar - Criar",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Correspondências - Adicionar - Eliminar",
+          "correta": false
+        }
+      ],
+      "explicacao": "No SQLite, a tabela de 'Afinidades' refere-se aos tipos de dados suportados, ALTER TABLE é usado para 'Adicionar' novos atributos/colunas, e DROP TABLE para 'Excluir' uma tabela inteira."
+    },
+    {
+      "id": 106,
+      "tipo": "mc",
+      "pergunta": "Qual o resultado impresso pelo trecho do script a seguir, considerando que a conexão e cursor foram criados? >>> cursor.execute('SELECT nome FROM Produto;') >>> print(cursor.fetchall())",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "[\"Faca\", \"Garfo\", \"Prato\"]",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "[(\"Faca\", \"Garfo\", \"Prato\")]",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "[[\"Faca\"], [\"Garfo\"], [\"Prato\"]]",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "[(\"Faca\",), (\"Garfo\",), (\"Prato\",)]",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "[(\"Faca\"), (\"Garfo\"), (\"Prato\")]",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método fetchall() retorna uma lista de tuplas, onde cada tupla representa uma linha do resultado. Como estamos selecionando apenas uma coluna (nome), cada tupla terá apenas um elemento, resultando em [(\"Faca\",), (\"Garfo\",), (\"Prato\",)]."
+    },
+    {
+      "id": 107,
+      "tipo": "mc",
+      "pergunta": "Maria está desenvolvendo um script em Python para atualizar registros em uma tabela de banco de dados. Ela utiliza placeholders como '?' em seus comandos SQL para evitar SQL Injection. Qual técnica Maria está utilizando para aumentar a segurança de seu script de banco de dados?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Hardcoding de comandos SQL",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Utilização de procedimentos armazenados",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Uso de parâmetros dinâmicos",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Aplicação de criptografia nos dados",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Implementação de chaves estrangeiras",
+          "correta": false
+        }
+      ],
+      "explicacao": "O uso de placeholders como '?' com parâmetros dinâmicos é uma técnica de segurança que previne SQL Injection, separando os dados dos comandos SQL."
+    },
+    {
+      "id": 108,
+      "tipo": "mc",
+      "pergunta": "Joana, uma desenvolvedora junior, foi designada para implementar um pequeno sistema de gerenciamento de biblioteca em Python. O sistema necessita gerenciar informações sobre livros e autores. Joana optou por usar SQLite para a base de dados e começou definindo as tabelas. Considerando o texto, analise as afirmativas abaixo: I. SQLite é uma escolha adequada para pequenos sistemas devido à sua leveza e facilidade de uso. II. No SQLite, é necessário criar um servidor de banco de dados separado. III. Para interagir com o SQLite em Python, é necessário usar bibliotecas de terceiros. Marque a opção correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Somente I e III estão corretas",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Somente II está correta",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Somente I está correta",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "I, II e III estão incorretas",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Somente II e III estão corretas",
+          "correta": false
+        }
+      ],
+      "explicacao": "I está correta: SQLite é leve e adequado para pequenos sistemas. II está incorreta: SQLite não requer servidor separado. III está incorreta: Python possui suporte nativo ao SQLite através do módulo sqlite3."
+    },
+    {
+      "id": 109,
+      "tipo": "mc",
+      "pergunta": "Você está construindo um sistema de gerenciamento de inventário em Python e decide usar MySQL. O sistema precisa de funcionalidades para remover itens descontinuados do banco de dados periodicamente. Qual é o comando SQL adequado para remover um item específico do banco de dados MySQL em Python?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "INSERT INTO",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "SELECT",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "UPDATE",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "DELETE FROM",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "ALTER TABLE",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando DELETE FROM é usado para remover registros de uma tabela no banco de dados."
+    },
+    {
+      "id": 110,
+      "tipo": "mc",
+      "pergunta": "Uma academia está atualizando seu sistema de gerenciamento de membros e precisa atualizar os dados de contato dos membros no banco de dados. O sistema é baseado em Python e SQLite. Qual é o comando SQL correto para atualizar o endereço de email de um membro específico no banco de dados?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "SELECT email FROM membros WHERE id=123",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "DELETE FROM membros WHERE email = 'novo@email.com'",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "INSERT INTO membros (email) VALUES ('novo@email.com') WHERE id = 123",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "UPDATE membros SET email = 'novo@email.com' WHERE id = 123",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "CREATE TABLE membros_new AS SELECT * FROM membros",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando UPDATE é usado para modificar registros existentes em uma tabela. A sintaxe correta é UPDATE tabela SET coluna = valor WHERE condição."
+    },
+    {
+      "id": 111,
+      "tipo": "mc",
+      "pergunta": "Para aprimorar a consulta de dados em um sistema de controle de estoque, é necessário recuperar informações sobre produtos, incluindo nome e quantidade, da tabela Produtos. Qual é o comando SQL adequado para selecionar o nome e a quantidade de todos os produtos na tabela Produtos?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "SELECT nome, quantidade FROM Produtos",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "INSERT INTO Produtos(nome,quantidade)",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "UPDATE Produtos SET nome, quantidade",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "DELETE FROM Produtos WHERE nome, quantidade",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "CREATE TABLE Produtos(nome, quantidade)",
+          "correta": false
+        }
+      ],
+      "explicacao": "O comando SELECT é usado para consultar dados de uma tabela. A sintaxe SELECT coluna1, coluna2 FROM tabela recupera as colunas especificadas de todos os registros."
+    },
+    {
+      "id": 112,
+      "tipo": "mc",
+      "pergunta": "A biblioteca tkinter possui diversos componentes que devem ser usados em determinadas situações que auxiliem o usuário na realização de uma tarefa. Selecione a opção CORRETA que apresenta o componente do tkinter mais adequado para tratar a situação em que uma mensagem deve ser exibida para o usuário logo depois que ele realizou uma tarefa e que ele precisa fazer algum tipo de confirmação:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Dialog",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Checkbox",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Label",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Button",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Message",
+          "correta": false
+        }
+      ],
+      "explicacao": "Dialog (como messagebox) é o componente mais adequado para exibir mensagens que requerem confirmação do usuário após uma tarefa."
+    },
+    {
+      "id": 113,
+      "tipo": "mc",
+      "pergunta": "O Python adquiriu destaque na área de desenvolvimento, em parte, pela sua simplicidade, mas também por possuir diversos pacotes e frameworks que facilitam, por exemplo, a construção de aplicações de bancos de dados, ciência de dados e construção de interfaces. A quantidade de recursos associada ao Python auxilia o desenvolvedor a construir aplicações padronizadas, adaptadas às funções de negócio e preparadas para mudanças, de forma mais rápida e com menor custo. Tais características fazem do Python uma linguagem apropriada ao desenvolvimento rápido de projetos de software. Com base no texto apresentado, conclui-se que:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A linguagem Python estabelece padrões de simplicidade que exigem dos pacotes e frameworks de terceiros adaptação estrutural",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A linguagem Python permite criar rapidamente aplicações flexíveis que permitem o desenvolvedor reprojetar conforme a necessidade",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "A linguagem Python possui mecanismos embutidos para construção de interfaces ricas padronizando assim os projetos de software",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "A linguagem Python possui uma grande quantidade de recursos, o que torna a adaptação às funções de negócio mais demorada",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "A linguagem Python se destaca pela quantidade de pacotes e frameworks, no entanto, a aplicação do RAD fica prejudicada devido à falta de padronização",
+          "correta": false
+        }
+      ],
+      "explicacao": "O texto destaca a flexibilidade do Python para criar aplicações que podem ser facilmente adaptadas e reprojetadas conforme as necessidades de negócio, característica fundamental para o desenvolvimento rápido (RAD)."
+    },
+    {
+      "id": 114,
+      "tipo": "mc",
+      "pergunta": "Considere o fragmento de código Python abaixo:\n\n1. import tkinter as tk\n2. janela = tk.Tk()\n3. T = tk.Text(janela, height=2, width=30)\n4. T.pack()\n5. T.lacuna_I(tk.END, lacuna_II)\n6. tk.mainloop()\n\nPara que o código seja compilado e executado corretamente e, além disso, seja exibida a mensagem: 'Este é um texto.\nEsta é a segunda linha.\nEsta é a terceira linha' as palavras lacuna_I e lacuna_II devem ser substituídas, respectivamente, por:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "text e \"Este é um texto. Esta é a segunda linha. \\nEsta é a terceira linha.\\n\"",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "insert e \"Este é um texto.\\nEsta é a segunda linha. \\nEsta é a terceira linha. \\n\"",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "insert e \"Este é um texto, Esta é a segunda linha, \\nEsta é a terceira linha. \\n\"",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "text e \"Este é um texto. Esta é a segunda linha, Esta é a terceira linha.\\n\"",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Nenhuma das outras alternativas",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método insert() é usado para adicionar texto ao widget Text. A string deve conter '\\n' para quebras de linha, e o '\\n' final garante que a última linha seja exibida corretamente."
     }
   ]
 }
+
 
