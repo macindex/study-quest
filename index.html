@@ -10,7 +10,7 @@
 	<meta name="msapplication-TileColor" content="#007bff">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- Verificar se os caminhos estão corretos -->
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/default.css">
@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/navigation-buttons.css">
 	
 	<style>
-		/* Estilos de fallback caso o main.css não carregue */
+		/* Estilos da página de introdução */
 		.intro-container {
 			min-height: 100vh;
 			display: flex;
@@ -113,7 +113,7 @@
 			margin-right: 8px;
 		}
 
-		/* Garantir que o body não tenha margens/padding */
+		/* Reset básico */
 		body {
 			margin: 0;
 			padding: 0;
@@ -161,16 +161,19 @@
 	</div>
 
 	<script>
-		// Script para debug - verificar se os CSS estão carregando
+		// Script seguro que não viola CSP
 		document.addEventListener('DOMContentLoaded', function() {
-			console.log('Página carregada');
+			// Verificar se a página carregou corretamente
+			console.log('Study Quest - Página carregada com sucesso');
 			
-			// Verificar se os estilos estão aplicados
-			const introContainer = document.querySelector('.intro-container');
-			if (introContainer) {
-				const styles = window.getComputedStyle(introContainer);
-				console.log('Estilo do container:', styles.background);
-			}
+			// Adicionar event listeners seguros para os botões
+			const buttons = document.querySelectorAll('.btn-custom');
+			buttons.forEach(button => {
+				button.addEventListener('click', function(e) {
+					console.log('Navegando para:', this.href);
+					// O navegador seguirá o link normalmente
+				});
+			});
 		});
 	</script>
 </body>
