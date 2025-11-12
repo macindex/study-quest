@@ -1,6 +1,117 @@
 /* main.css */
 /* Estilos principais da aplicação */
 
+/* ===== ESTILOS DA PÁGINA DE INTRODUÇÃO ===== */
+
+.intro-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.intro-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.intro-title {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-custom {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-drap {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.btn-drap:hover {
+    background: linear-gradient(45deg, #0056b3, #004085);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-poo {
+    background: linear-gradient(45deg, #28a745, #1e7e34);
+}
+
+.btn-poo:hover {
+    background: linear-gradient(45deg, #1e7e34, #155724);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40,167,69,0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.feature-list {
+    text-align: left;
+    margin: 25px 0;
+    padding: 0 20px;
+}
+
+.feature-item {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.feature-item:before {
+    content: "✓ ";
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Esconder todas as páginas de questões inicialmente */
+.questions-page {
+    display: none;
+}
+
+.back-button {
+    margin: 20px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* ===== ESTILOS DAS QUESTÕES ===== */
+
 .correct-choice {
     background-color: #d4edda !important;
     border-color: #c3e6cb !important;
@@ -114,6 +225,7 @@
     color: #007bff;
     font-weight: bold;
 }
+
 /* Estilos para o container de estatísticas */
 .stats-container {
     margin: 15px 0;
@@ -163,83 +275,10 @@
     max-width: 200px;
 }
 
-/* Estilos para os resultados finais no modal */
-.final-results {
-    text-align: center;
-}
-
-.result-percentage {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 20px;
-}
-
-.result-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.stat-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    border-radius: 4px;
-    background-color: #f8f9fa;
-}
-
-.stat-label {
-    font-weight: 500;
-}
-
-.stat-value.correct {
-    color: #28a745;
-    font-weight: bold;
-}
-
-.stat-value.incorrect {
-    color: #dc3545;
-    font-weight: bold;
-}
-
-.stat-value.unanswered {
-    color: #6c757d;
-    font-weight: bold;
-}
-
-.stat-value.total {
-    color: #007bff;
-    font-weight: bold;
-}
-
 /* Estilo para o alerta de confirmação */
 .alert {
     margin-bottom: 15px;
     border-radius: 8px;
-}
-
-/* Responsividade */
-@media (max-width: 576px) {
-    .stats-display {
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    .reset-stats-btn {
-        font-size: 11px;
-        padding: 3px 6px;
-    }
-    
-    .stats-container {
-        padding: 10px;
-    }
-    
-    .result-stats {
-        grid-template-columns: 1fr;
-    }
 }
 
 .multi-choice-item {
@@ -262,14 +301,92 @@
     cursor: pointer;
 }
 
-/* Responsividade */
+/* ===== ESTILOS DO BOTÃO VOLTAR ===== */
+
+.back-home-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-home-btn:hover {
+    background: #5a6268;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Versão alternativa com ícone */
+.back-home-btn-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #6c757d;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-home-btn-icon:hover {
+    background: #5a6268;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
 @media (max-width: 576px) {
     .stats-display {
         flex-direction: column;
         gap: 8px;
     }
     
+    .reset-stats-btn {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    
+    .stats-container {
+        padding: 10px;
+    }
+    
     .result-stats {
         grid-template-columns: 1fr;
+    }
+    
+    .intro-card {
+        padding: 30px 20px;
+    }
+    
+    .intro-title {
+        font-size: 2rem;
+    }
+    
+    .btn-custom {
+        padding: 12px 20px;
+        font-size: 1rem;
     }
 }

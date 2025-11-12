@@ -1,0 +1,334 @@
+{
+  "questoes": [
+    {
+      "id": 1,
+      "tipo": "mc",
+      "pergunta": "Ao se implementar programas de computador em Java, há possibilidade de ocorrerem erros imprevistos durante sua execução. Esses erros são conhecidos como exceções. Sabendo disso, considere que Márcio está fazendo uma operação em um banco de dados, porém essa operação dispara uma exceção de que o campo que ele está manipulando para inserir nesse banco está vazio, ou seja, acontece um NullPointerException. O problema, nesse caso, é a conexão com o banco de dados ficar aberta, o que não pode acontecer. Assim, assinale a alternativa que apresenta o bloco/código no qual deve ser inserida essa operação de fechamento da conexão com o banco de dados.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "if",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "else",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "try",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "catch",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "finally",
+          "correta": true
+        }
+      ],
+      "explicacao": "O bloco finally é sempre executado, independentemente de ocorrer uma exceção ou não, sendo o local ideal para fechar recursos como conexões com banco de dados."
+    },
+    {
+      "id": 2,
+      "tipo": "mc",
+      "pergunta": "Analisem as seguintes afirmativas sobre a programação orientada a objetos com Java.\n\nI. O tratamento de exceção permite criar programas tolerantes a falhas.\nII. Para lidar com uma exceção, deve-se colocar qualquer código que pode lançar uma exceção em uma instrução catch.\nIII. O método toString de um objeto de exceção retorna uma mensagem de erro da exceção.\nIV. O bloco catch contém o código que pode lançar uma exceção e o bloco try contém o código que manipula a exceção se uma ocorrer.\n\nEstá(ão) correta (s) apenas a(s) afirmativa(s)",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "III",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "I e III",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "II e IV",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "I, III e IV",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "II",
+          "correta": false
+        }
+      ],
+      "explicacao": "I está correta: tratamento de exceções torna programas mais robustos. III está correta: toString() retorna informações da exceção. II está errada: código que lança exceção vai no try. IV está errada: try contém código que pode lançar exceção, catch contém o tratamento."
+    },
+    {
+      "id": 3,
+      "tipo": "mc",
+      "pergunta": "Em Java, a palavra-chave throws é usada para:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Causar uma exceção e fornecer seus argumentos.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Especificar os métodos que tratarão uma dada exceção.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Causar a exceção que está sendo tratada.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Especificar um código a ser executado, após qualquer tratamento de exceção no bloco.",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Especificar os tipos de exceções que um dado método pode causar.",
+          "correta": true
+        }
+      ],
+      "explicacao": "A palavra-chave throws é usada na declaração de métodos para indicar que ele pode lançar determinados tipos de exceções, delegando o tratamento para quem chama o método."
+    },
+    {
+      "id": 4,
+      "tipo": "mc",
+      "pergunta": "Um objeto de exceção possui, na linguagem Java, o método:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Getfor().",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Getchvar().",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Getprior().",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Getsign().",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "getMessage().",
+          "correta": true
+        }
+      ],
+      "explicacao": "O método getMessage() retorna a mensagem de erro detalhada associada à exceção, sendo um dos métodos mais utilizados da classe Throwable."
+    },
+    {
+      "id": 5,
+      "tipo": "mc",
+      "pergunta": "Os usuários de um sistema web, desenvolvido em java, reclamam de erros nos dados consultados. A equipe técnica, ao analisar a situação, concluiu que determinado método M está sendo invocado, simultaneamente, por diferentes threads. Considerando que não há manipulação de locks no restante do sistema, o que pode ser feito para que M seja executado, em dado momento, somente por uma thread?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Ajustar o firewall de borda para permitir uma conexão por IP.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Implementar connection pooling no acesso ao banco de dados.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Utilizar a keyword lockable no bloco de M.",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Declarar o método M como synchronized.",
+          "correta": true
+        },
+        {
+          "letra": "E",
+          "texto": "Reescrever M em Assembly, necessariamente.",
+          "correta": false
+        }
+      ],
+      "explicacao": "A keyword synchronized garante que apenas uma thread por vez execute o método, resolvendo problemas de concorrência e race conditions."
+    },
+    {
+      "id": 6,
+      "tipo": "mc",
+      "pergunta": "Na linguagem Java, uma thread executável pode entrar em um determinado estado por um intervalo de tempo específico, retornando ao estado executável quando for notificada por outra thread ou quando esse intervalo expirar. Essa situação caracteriza o seguinte estado:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Cancelado",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "Bloqueado",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Espera sincronizada",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Novo",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Terminado",
+          "correta": false
+        }
+      ],
+      "explicacao": "O estado 'Espera sincronizada' (TIMED_WAITING) ocorre quando uma thread espera por um tempo específico usando métodos como sleep() ou wait(timeout)."
+    },
+    {
+      "id": 7,
+      "tipo": "mc",
+      "pergunta": "Entre as ferramentas de produtividade do NetBeans, temos uma que permite gerar classes de controle JPA, de forma automatizada, a partir das entidades, concentrando todos os métodos necessários para encapsular as operações DML. No caso da remoção de um registro, qual seria o método oferecido pela classe de controle?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "destroy",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "merge",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "create",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "edit",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "persist",
+          "correta": false
+        }
+      ],
+      "explicacao": "No NetBeans, as classes de controle JPA geradas automaticamente usam o método destroy() para operações de remoção/delete de registros."
+    },
+    {
+      "id": 8,
+      "tipo": "mc",
+      "pergunta": "Após instanciar os drivers JDBC no aplicativo Java, precisamos estabelecer a conexão com o banco de dados e, a partir da obtenção da conexão, instanciar os objetos que serão responsáveis por executar as instruções SQL. Selecione a classe, pertencente à API JDBC, que administra e seleciona o driver adequado para iniciar uma conexão com o banco de dados na linguagem Java.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Statement",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "DriverManager",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "Resultset",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "PreparedStatement",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "Connection",
+          "correta": false
+        }
+      ],
+      "explicacao": "A classe DriverManager é responsável por gerenciar os drivers JDBC e fornecer métodos para estabelecer conexões com bancos de dados."
+    },
+    {
+      "id": 9,
+      "tipo": "mc",
+      "pergunta": "Com o surgimento do DAO foi possível padronizar a forma com que as operações sobre o banco de dados são implementadas, o que levou à definição de ferramentas como o JPA, onde a obtenção de uma coleção de entidades, a partir da consulta através de sintaxe JPQL, ocorre com base no método:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "getResultlist",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "createEntityManager",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "getntityManager",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "createResultList",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "createNamedQuery",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método getResultList() é usado para executar consultas JPQL e retornar uma lista de resultados (entidades)."
+    },
+    {
+      "id": 10,
+      "tipo": "mc",
+      "pergunta": "Em relação à criação e controle de threads na linguagem Java, assinale a opção correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O método run() de uma thread inicia a execução concorrente do thread quando chamado diretamente.",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "A interface Runnable permite definir threads, mas não pode ser usada com a classe Thread.",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "O método slesp() faz com que o thread atual pause sua execução por um tempo determinado, mas ele pode lançar a exceção InterruptedException.",
+          "correta": true
+        },
+        {
+          "letra": "D",
+          "texto": "Após um thread entrar no estado \"terminated\", ele pode ser reiniciado chamando novamente o método start().",
+          "correta": false
+        },
+        {
+          "letra": "E",
+          "texto": "O método interrupt() encerra imediatamente a execução de um thread, mesmo que ele esteja executando uma tarefa crítica.",
+          "correta": false
+        }
+      ],
+      "explicacao": "O método sleep() pausa a execução da thread por um tempo determinado e pode lançar InterruptedException se a thread for interrompida durante o sono."
+    }
+  ]
+}

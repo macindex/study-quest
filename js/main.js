@@ -11,6 +11,63 @@ let stats = {
     unanswered: 0
 };
 
+// NOVA VARIÁVEL: Para controlar qual arquivo JSON carregar
+let currentQuestionFile = 'questions.json'; // Padrão
+
+// NOVA FUNÇÃO: Detectar qual arquivo JSON carregar baseado na URL
+function detectQuestionFile() {
+    const currentPage = window.location.pathname;
+    
+    if (currentPage.includes('quest-drap.html') || currentPage.includes('questoes-drap.html')) {
+        return 'questions.json';
+    } else if (currentPage.includes('quest-poo.html') || currentPage.includes('questoes-poo.html')) {
+        return 'qpoo.json';
+    } else {
+        return 'questions.json'; // Padrão
+    }
+}
+
+// MODIFICADA: Função para carregar questões do arquivo JSON
+async function loadQuestions() {
+    try {
+        // Determinar qual arquivo carregar baseado na página atual
+        currentQuestionFile = detectQuestionFile();
+        
+        const response = await fetch(currentQuestionFile);
+        const data = await response.json();
+        questions = data.questoes || data.questions; // Suporte para ambos os formatos
+        
+        // Embaralhar as alternativas de todas as questões
+        shuffledQuestions = processAndShuffleQuestions(questions);
+        
+        // Atualizar título da página
+        if (data.titulo) {
+            document.title = data.titulo + " | ExamTopics";
+        }
+        
+        // Inicializar estatísticas com todas as questões como não respondidas
+        stats.unanswered = shuffledQuestions.length;
+        
+        // Criar container de estatísticas
+        createStatsContainer();
+        
+        // Inicializar a primeira questão
+        getQuestion(0);
+    } catch (error) {
+        console.error('Erro ao carregar questões:', error);
+        // Fallback: tentar carregar o arquivo alternativo
+        if (currentQuestionFile === 'questions.json') {
+            console.log('Tentando carregar qpoo.json como fallback...');
+            currentQuestionFile = 'qpoo.json';
+            loadQuestions(); // Recursão para tentar o outro arquivo
+        } else if (currentQuestionFile === 'qpoo.json') {
+            console.log('Tentando carregar questions.json como fallback...');
+            currentQuestionFile = 'questions.json';
+            loadQuestions(); // Recursão para tentar o outro arquivo
+        }
+    }
+}
+
 // Função para embaralhar array (Algoritmo Fisher-Yates)
 function shuffleArray(array) {
     const newArray = [...array];
@@ -36,6 +93,7 @@ function updateStatsDisplay() {
         }
     }
 }
+
 // NOVA FUNÇÃO: Permitir clique em toda a área da alternativa
 function initializeChoiceClickEvents() {
     // Seleciona todos os itens de múltipla escolha
@@ -75,6 +133,7 @@ function handleChoiceClick(event) {
         });
     }
 }
+
 // ATUALIZADA: Função para melhorar o estilo visual das alternativas clicáveis
 function enhanceChoiceItemsStyle() {
     const choiceItems = document.querySelectorAll('.multi-choice-item');
@@ -284,32 +343,6 @@ function processAndShuffleQuestions(originalQuestions) {
             shuffledCorrectIndex: newCorrectIndex
         };
     });
-}
-
-// Carregar questões do arquivo JSON
-async function loadQuestions() {
-    try {
-        const response = await fetch('questions.json');
-        const data = await response.json();
-        questions = data.questions;
-        
-        // Embaralhar as alternativas de todas as questões
-        shuffledQuestions = processAndShuffleQuestions(questions);
-        
-        // Atualizar título da página
-        document.title = data.titulo + " | ExamTopics";
-        
-        // Inicializar estatísticas com todas as questões como não respondidas
-        stats.unanswered = shuffledQuestions.length;
-        
-        // Criar container de estatísticas
-        createStatsContainer();
-        
-        // Inicializar a primeira questão
-        getQuestion(0);
-    } catch (error) {
-        console.error('Erro ao carregar questões:', error);
-    }
 }
 
 function clearRadios() {

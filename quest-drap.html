@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"
+	class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!--<base href="https://www.examtopics.com/exams/microsoft/az-204/view/1/">-->
+	<!-- meta tag -->
+
+	<title>Desenvolvimento Rápido de Aplicações em Python | ExamTopics</title>
+	<meta name="description" content="Free, Actual and Latest Practice Test for those who are preparing for Developing Solutions for Microsoft Azure
+		.">
+	<!-- responsive tag -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="msapplication-TileColor" content="#007bff">
+	<meta name="msapplication-TileImage" content="/assets/images/et/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/default.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/navigation-buttons.css">
+</head>
+
+<body class="home2"><!-- Botão Voltar para Início -->
+    <a href="index.html" class="back-home-btn" title="Voltar para página inicial">
+        ← Voltar para Início
+    </a>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					75%
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sec-spacer" style="padding: 20px 0px; ">
+		<div class="container">
+			<!-- exam-view47 -->
+			<div class="row">
+				<div class="col-12">
+					<div class="questions-container">
+
+						<!-- exam-view48 -->
+						<!-- Question -->
+						<div class="card exam-question-card">
+							<div class="card-header text-white bg-primary">
+								<span id="numQuestion">Questão 1</span>
+							</div>
+							<div class="card-body question-body" data-id="816230">
+								<p id="questao" class="card-text">
+									Descrição da Questão<br>What should you do?<br>
+								</p>
+								<!-- exam-view49 -->
+								<div class="question-choices-container">
+									<div class="voted-answers-tally d-none">
+										<script id="816230"
+											type="application/json">[{"voted_answers": "C", "vote_count": 22, "is_most_voted": true}]</script>
+									</div>
+									<ul>
+										<li class="multi-choice-item">
+											<span class="multi-choice-letter" data-choice-letter="A">
+												<input type="radio" id="q0" name="selecao" aria-label="radio"
+													checked="false" />
+												<span id="alternative0">A</span>
+											</span>
+										</li>
+										<li class="multi-choice-item">
+											<span class="multi-choice-letter" data-choice-letter="B">
+												<input type="radio" id="q1" name="selecao" aria-label="radio"
+													checked="false" />
+												<span id="alternative1">B</span>
+											</span>
+										</li>
+										<li class="multi-choice-item">
+											<span class="multi-choice-letter" data-choice-letter="C">
+												<input type="radio" id="q2" name="selecao" aria-label="radio"
+													checked="false" />
+												<span id="alternative2">C</span>
+											</span>
+											
+										</li>
+										<li class="multi-choice-item">
+											<span class="multi-choice-letter" data-choice-letter="D">
+												<input type="radio" id="q3" name="selecao" aria-label="radio"
+													checked="false" />
+												<span id="alternative3">D</span>
+											</span>
+										</li>
+										<li class="multi-choice-item">
+											<span class="multi-choice-letter" data-choice-letter="E">
+												<input type="radio" id="q4" name="selecao" aria-label="radio"
+													checked="false" />
+												<span id="alternative4">E</span>
+											</span>
+										</li>
+									</ul>
+								</div>
+
+								<!-- exam-view410 -->
+								<div onclick="showSolution()" class="btn btn-primary reveal-solution d-print-none">
+									Reveal Solution</div>
+								<div onclick="hideSolution()" class="btn btn-primary hide-solution d-none d-print-none">
+									Hide Solution</div>
+								
+								<!-- Container de estatísticas com botão de reset -->
+								<div id="stats-container" class="stats-container">
+									<div class="stats-content">
+										<div class="stats-display">
+											<span class="stat-correct">✓ 0</span>
+											<span class="stat-incorrect">✗ 0</span>
+											<span class="stat-unanswered">? 0</span>
+										</div>
+									</div>
+									<button id="resetStatsBtn" class="btn btn-warning btn-sm reset-stats-btn" 
+											onclick="resetStats()" title="Zerar todas as respostas e estatísticas" 
+											data-toggle="tooltip">
+										↻ Zerar Estatísticas
+									</button>
+								</div>
+								
+								<!-- Botões de navegação -->
+								<div class="navigation-buttons-container">
+									<button id="prevBtn" class="btn btn-secondary nav-btn">Anterior</button>
+									<button id="nextBtn" class="btn btn-success nav-btn">Próxima</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Inclusão do arquivo JavaScript externo -->
+	<script src="./js/main.js"></script>
+</body>
+</html>
