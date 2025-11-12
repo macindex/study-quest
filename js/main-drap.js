@@ -15,6 +15,11 @@ async function loadQuestions() {
     try {
         console.log('Carregando questões de DRAP...');
         const response = await fetch('questions.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const data = await response.json();
         questions = data.questoes || data.questions;
         
@@ -28,8 +33,11 @@ async function loadQuestions() {
         
     } catch (error) {
         console.error('Erro ao carregar questões de DRAP:', error);
-        document.getElementById('questao').innerHTML = 
-            'Erro ao carregar questões de DRAP. Verifique se o arquivo questions.json existe.';
+        const questaoElement = document.getElementById('questao');
+        if (questaoElement) {
+            questaoElement.innerHTML = 
+                'Erro ao carregar questões de DRAP. Verifique se o arquivo questions.json existe.';
+        }
     }
 }
 
@@ -116,18 +124,27 @@ function getQuestion(i) {
     
     // Mostrar todas as alternativas primeiro
     for (let x = 0; x < 5; x++) {
-        const altElement = document.getElementById(`alternative${x}`).parentElement.parentElement;
-        altElement.classList.remove('d-none');
+        const altElement = document.getElementById(`alternative${x}`);
+        if (altElement) {
+            const parentElement = altElement.parentElement.parentElement;
+            if (parentElement) {
+                parentElement.classList.remove('d-none');
+            }
+        }
     }
     
     const totalAlternatives = shuffledQuestions[i].alternativas.length;
     clearRadios();
     
     const titleSpan = document.getElementById('numQuestion');
-    titleSpan.innerHTML = "Questão DRAP " + shuffledQuestions[i].id;
+    if (titleSpan) {
+        titleSpan.innerHTML = "Questão DRAP " + shuffledQuestions[i].id;
+    }
     
     const questionText = document.getElementById('questao');
-    questionText.innerHTML = shuffledQuestions[i].pergunta;
+    if (questionText) {
+        questionText.innerHTML = shuffledQuestions[i].pergunta;
+    }
     
     // Preencher as alternativas
     shuffledQuestions[i].alternativas.forEach((alternative, x) => {
@@ -139,8 +156,13 @@ function getQuestion(i) {
     
     // Esconder alternativas extras que não são usadas
     for (let x = totalAlternatives; x < 5; x++) {
-        const altElement = document.getElementById(`alternative${x}`).parentElement.parentElement;
-        altElement.classList.add('d-none');
+        const altElement = document.getElementById(`alternative${x}`);
+        if (altElement) {
+            const parentElement = altElement.parentElement.parentElement;
+            if (parentElement) {
+                parentElement.classList.add('d-none');
+            }
+        }
     }
     
     actualQuestion.id = shuffledQuestions[i].id;
@@ -393,12 +415,14 @@ function resetStats() {
         statsContainer.parentNode.insertBefore(alertDiv, statsContainer);
     }
     
-    // Remover o alerta após 3 segundos
-    setTimeout(() => {
+    // Remover o alerta após 3 segundos usando função
+    const removeAlert = function() {
         if (alertDiv.parentNode) {
             alertDiv.parentNode.removeChild(alertDiv);
         }
-    }, 3000);
+    };
+    
+    setTimeout(removeAlert, 3000);
 }
 
 function calculateFinalResults() {
@@ -447,8 +471,11 @@ function calculateFinalResults() {
     }
     
     // Abrir o modal
-    const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
-    modal.show();
+    const modalElement = document.getElementById('exampleModal');
+    if (modalElement && typeof bootstrap !== 'undefined') {
+        const modal = new bootstrap.Modal(modalElement);
+        modal.show();
+    }
     
     return percentage;
 }

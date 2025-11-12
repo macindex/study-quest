@@ -11,15 +11,22 @@ let stats = {
 };
 
 // Carrega questões de POO
+// No js/main-poo.js, modifique apenas esta função:
 async function loadQuestions() {
     try {
         console.log('Carregando questões de POO...');
         const response = await fetch('qpoo.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const data = await response.json();
         questions = data.questoes || data.questions;
         
         console.log(`Carregadas ${questions.length} questões de POO`);
         
+        // Resto do código igual...
         shuffledQuestions = processAndShuffleQuestions(questions);
         stats.unanswered = shuffledQuestions.length;
         createStatsContainer();
@@ -28,8 +35,11 @@ async function loadQuestions() {
         
     } catch (error) {
         console.error('Erro ao carregar questões de POO:', error);
-        document.getElementById('questao').innerHTML = 
-            'Erro ao carregar questões de POO. Verifique se o arquivo qpoo.json existe.';
+        const questaoElement = document.getElementById('questao');
+        if (questaoElement) {
+            questaoElement.innerHTML = 
+                'Erro ao carregar questões de POO. Verifique se o arquivo qpoo.json existe.';
+        }
     }
 }
 

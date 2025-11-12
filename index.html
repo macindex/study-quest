@@ -1,180 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Study Quest - Plataforma de Estudos</title>
-	<meta name="description" content="Plataforma de estudos com questões sobre DRAP e POO">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Study Quest - Plataforma de Estudos</title>
+    <meta name="description" content="Plataforma de estudos com questões sobre DRAP e POO">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="msapplication-TileColor" content="#007bff">
-	<meta name="theme-color" content="#ffffff">
+    <!-- CSP Meta Tag para desenvolvimento -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self' 'unsafe-inline'; 
+        style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
+        font-src 'self' https://cdnjs.cloudflare.com;
+        connect-src 'self';
+    ">
 
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/default.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/navigation-buttons.css">
-	
-	<style>
-		/* Estilos da página de introdução */
-		.intro-container {
-			min-height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-			padding: 20px;
-		}
+    <meta name="msapplication-TileColor" content="#007bff">
+    <meta name="theme-color" content="#ffffff">
 
-		.intro-card {
-			background: white;
-			border-radius: 15px;
-			box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-			padding: 40px;
-			max-width: 500px;
-			width: 100%;
-			text-align: center;
-		}
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation-buttons.css">
+    
+    <style>
+        /* Estilos da página de introdução */
+        .intro-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
 
-		.intro-title {
-			color: #333;
-			font-size: 2.5rem;
-			font-weight: bold;
-			margin-bottom: 10px;
-		}
+        .intro-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
 
-		.intro-subtitle {
-			color: #666;
-			font-size: 1.1rem;
-			margin-bottom: 30px;
-		}
+        .intro-title {
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-		.btn-container {
-			display: flex;
-			flex-direction: column;
-			gap: 15px;
-			margin-top: 30px;
-		}
+        .intro-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
 
-		.btn-custom {
-			padding: 15px 30px;
-			font-size: 1.1rem;
-			border: none;
-			border-radius: 8px;
-			transition: all 0.3s ease;
-			text-decoration: none;
-			display: block;
-			color: white;
-			font-weight: 600;
-		}
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
 
-		.btn-drap {
-			background: linear-gradient(45deg, #007bff, #0056b3);
-		}
+        .btn-custom {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            color: white;
+            font-weight: 600;
+        }
 
-		.btn-drap:hover {
-			background: linear-gradient(45deg, #0056b3, #004085);
-			transform: translateY(-2px);
-			box-shadow: 0 5px 15px rgba(0,123,255,0.3);
-			color: white;
-			text-decoration: none;
-		}
+        .btn-drap {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+        }
 
-		.btn-poo {
-			background: linear-gradient(45deg, #28a745, #1e7e34);
-		}
+        .btn-drap:hover {
+            background: linear-gradient(45deg, #0056b3, #004085);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+            color: white;
+            text-decoration: none;
+        }
 
-		.btn-poo:hover {
-			background: linear-gradient(45deg, #1e7e34, #155724);
-			transform: translateY(-2px);
-			box-shadow: 0 5px 15px rgba(40,167,69,0.3);
-			color: white;
-			text-decoration: none;
-		}
+        .btn-poo {
+            background: linear-gradient(45deg, #28a745, #1e7e34);
+        }
 
-		.feature-list {
-			text-align: left;
-			margin: 25px 0;
-			padding: 0 20px;
-		}
+        .btn-poo:hover {
+            background: linear-gradient(45deg, #1e7e34, #155724);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(40,167,69,0.3);
+            color: white;
+            text-decoration: none;
+        }
 
-		.feature-item {
-			margin: 10px 0;
-			color: #555;
-			font-size: 1rem;
-		}
+        .feature-list {
+            text-align: left;
+            margin: 25px 0;
+            padding: 0 20px;
+        }
 
-		.feature-item:before {
-			content: "✓ ";
-			color: #28a745;
-			font-weight: bold;
-			margin-right: 8px;
-		}
+        .feature-item {
+            margin: 10px 0;
+            color: #555;
+            font-size: 1rem;
+        }
 
-		/* Reset básico */
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-		}
-	</style>
+        .feature-item:before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* Reset básico */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 
 <body class="home2">
-	<!-- Página de Introdução -->
-	<div id="introPage">
-		<div class="intro-container">
-			<div class="intro-card">
-				<h1 class="intro-title">Study Quest</h1>
-				<p class="intro-subtitle">Escolha o tipo de questões que deseja estudar</p>
-				
-				<div class="feature-list">
-					<div class="feature-item">Questões organizadas por categoria</div>
-					<div class="feature-item">Estatísticas de desempenho</div>
-					<div class="feature-item">Soluções detalhadas</div>
-					<div class="feature-item">Interface responsiva</div>
-				</div>
+    <!-- Página de Introdução -->
+    <div id="introPage">
+        <div class="intro-container">
+            <div class="intro-card">
+                <h1 class="intro-title">Study Quest</h1>
+                <p class="intro-subtitle">Escolha o tipo de questões que deseja estudar</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item">Questões organizadas por categoria</div>
+                    <div class="feature-item">Estatísticas de desempenho</div>
+                    <div class="feature-item">Soluções detalhadas</div>
+                    <div class="feature-item">Interface responsiva</div>
+                </div>
 
-				<div class="btn-container">
-					<a href="quest-drap.html" class="btn-custom btn-drap">
-						📚 DRAP
-						<small class="d-block mt-1" style="font-weight: normal; opacity: 0.9;">
-							Desenvolvimento Rápido de Aplicações em Python
-						</small>
-					</a>
-					
-					<a href="quest-poo.html" class="btn-custom btn-poo">
-						🔧 POO
-						<small class="d-block mt-1" style="font-weight: normal; opacity: 0.9;">
-							Programação Orientada a Objetos
-						</small>
-					</a>
-				</div>
+                <div class="btn-container">
+                    <a href="quest-drap.html" class="btn-custom btn-drap">
+                        📚 DRAP
+                        <small class="d-block mt-1" style="font-weight: normal; opacity: 0.9;">
+                            Desenvolvimento Rápido de Aplicações em Python
+                        </small>
+                    </a>
+                    
+                    <a href="quest-poo.html" class="btn-custom btn-poo">
+                        🔧 POO
+                        <small class="d-block mt-1" style="font-weight: normal; opacity: 0.9;">
+                            Programação Orientada a Objetos
+                        </small>
+                    </a>
+                </div>
 
-				<div class="mt-4" style="color: #888; font-size: 0.9rem;">
-					Selecione uma categoria para começar seus estudos
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="mt-4" style="color: #888; font-size: 0.9rem;">
+                    Selecione uma categoria para começar seus estudos
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<script>
-		// Script seguro que não viola CSP
-		document.addEventListener('DOMContentLoaded', function() {
-			// Verificar se a página carregou corretamente
-			console.log('Study Quest - Página carregada com sucesso');
-			
-			// Adicionar event listeners seguros para os botões
-			const buttons = document.querySelectorAll('.btn-custom');
-			buttons.forEach(button => {
-				button.addEventListener('click', function(e) {
-					console.log('Navegando para:', this.href);
-					// O navegador seguirá o link normalmente
-				});
-			});
-		});
-	</script>
+    <!-- Script removido para evitar CSP -->
 </body>
 </html>
